@@ -1,0 +1,35 @@
+/* Georeferenced offline road maps and route-specific photography. */
+.ri-real-map{background:#f5f7f0;border-color:#d4dfd0;overflow:hidden}
+.ri-real-map .ri-map-top{background:#f8faf4;border-bottom:1px solid #dde5d7;color:#566b52;font-size:11px;padding:12px 16px}
+.road-map-canvas{position:relative;background:#e5eddb;overflow:hidden}
+.ri-real-map .ri-svg{display:block;width:100%;height:auto;background:#eff4e9}
+.road-map-caption{position:absolute;bottom:14px;left:14px;right:14px;display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.96);border:1px solid #d8e0d5;border-radius:12px;padding:11px 14px;box-shadow:0 3px 15px #35493214;color:#52624e;font-size:10px;line-height:1.6}
+.road-caption-distance{font-family:Prompt,sans-serif;font-size:16px;font-weight:600;color:#4b60c4;white-space:nowrap}
+.road-map-caption>a{margin-left:auto;color:#4b60c4;text-decoration:underline;white-space:nowrap}
+.ri-real-map .ri-endpoints{background:#fcfcf7;padding:14px 17px;border-top:1px solid #dfe5d6}
+.ri-map-credit{font-size:8px;color:#78816f;background:#f5f7ef;padding:7px 14px;text-align:right;line-height:1.6}
+.ri-map-credit a{text-decoration:underline;text-underline-offset:2px}
+.ri-attribution summary{cursor:pointer}.ri-attribution p{font-size:9px;line-height:1.8;max-width:650px;margin:8px 0 8px auto}.ri-attribution[open]{text-align:left}
+.ri-real-map .ri-endpoints strong{color:#52664f}
+.ri-photos .ri-photo{background:#e9eee2}
+.ri-photo-contain .photo{object-fit:contain!important}
+.ri-photo .photo{object-position:center 38%}
+.ri-photos figcaption a{display:block;font-size:9px;color:var(--muted);margin-top:4px;text-decoration:underline;text-underline-offset:2px}
+.ri-destination-photo[data-photo-id=stay] .photo{object-position:center 35%}
+.ri-destination-photo[data-photo-id=village] .photo{object-position:center 30%}
+.presentation-route-story .ri-photos .ri-photo{height:clamp(180px,24svh,280px)}
+.presentation-infographic .ri-svg{max-height:47svh}
+.presentation-route-story .ri-metrics{margin-top:13px}
+.ri-real-map .ri-endpoints small{font-size:10px}
+.ri-source-details{margin-top:25px;border:1px solid var(--line);border-radius:13px;padding:15px 18px}
+.ri-source-details>summary{cursor:pointer;font-size:12px;color:var(--muted)}
+.ri-source-details .ri-sources{margin-top:15px}
+.ri-photo-note{padding:25px;border:1px dashed var(--line);background:var(--paper);border-radius:17px;color:var(--brown)}.ri-photo-note>span{font-size:30px}.ri-photo-note h3{font-family:Mali,Prompt,sans-serif;font-size:20px;margin:10px 0!important}.ri-photo-note p{font-size:12px;line-height:1.9}
+.expense-panel th:nth-child(4),.expense-panel td:nth-child(4){display:none}
+.status,.status-dot,.ri-state{display:none!important}
+body.dark .ri-real-map{background:#f5f7ef;border-color:#8d9982}body.dark .ri-real-map .ri-map-top,body.dark .ri-real-map .ri-endpoints,body.dark .ri-map-credit{color:#56674f}body.dark .ri-source-details{background:var(--paper)}
+@media(min-width:1600px){.presentation-route-story .ri-photos .ri-photo{height:27svh;max-height:300px}.ri-real-map .ri-endpoints strong{font-size:16px}}
+@media(min-width:1000px) and (max-height:850px){.presentation-route-story .ri-photos .ri-photo{height:170px}.presentation-infographic .ri-svg{max-height:45svh}.ri-real-map .ri-endpoints{padding:10px 13px}.ri-map-credit{padding:5px 10px;font-size:7px}.road-map-caption{padding:7px 10px;bottom:10px;left:10px;right:10px}.road-caption-distance{font-size:13px}}
+@media(max-width:900px){.presentation-infographic .ri-svg{max-height:none}.presentation-route-story .ri-photos .ri-photo{height:280px}}
+@media(max-width:600px){.road-map-caption{position:static;border-width:1px 0 0;border-radius:0;padding:10px;font-size:9px;gap:8px}.road-caption-distance{font-size:13px}.road-map-caption>span:nth-child(2){display:none}.ri-real-map .ri-map-top{font-size:9px;padding:10px}.ri-real-map .ri-endpoints{padding:13px 12px}.ri-map-credit{font-size:7px;padding:7px 10px}.presentation-route-story .ri-photos .ri-photo{height:265px}.ri-photos figcaption a{font-size:9px}.ri-source-details{padding:13px}.ri-metric>span{display:none}}
+@media print{.ri-real-map .ri-svg{max-height:none!important}.road-map-caption{position:static;padding:4px 7px;font-size:7px;border-radius:0}.road-caption-distance{font-size:9px}.road-map-caption>a{display:none}.ri-map-credit{font-size:6px;padding:4px 7px}.ri-real-map .ri-map-top{font-size:7px;padding:5px 7px}.ri-real-map .ri-endpoints{padding:7px}.ri-real-map .ri-endpoints strong{font-size:8px}.ri-real-map .ri-endpoints small{font-size:6px}.ri-photos figcaption a{font-size:6px}.ri-source-details{display:none}}

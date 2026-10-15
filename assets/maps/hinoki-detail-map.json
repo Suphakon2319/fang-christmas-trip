@@ -1,0 +1,17 @@
+{
+  "exportUrl": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/export?bbox=11036101.923204985%2C2231682.6875350825%2C11038101.923204985%2C2232932.6875350825&bboxSR=3857&imageSR=3857&size=1200%2C750&format=png32&transparent=false&f=json",
+  "href": "https://services.arcgisonline.com/arcgis/rest/directories/arcgisoutput/World_Topo_Map_MapServer/_ags_map9bb701b999044ba080e8077b88e15015.png",
+  "width": 1200,
+  "height": 750,
+  "extent": {
+    "xmin": 11036101.923204985,
+    "ymin": 2231682.6875350815,
+    "xmax": 11038101.923204985,
+    "ymax": 2232932.6875350815,
+    "spatialReference": {
+      "wkid": 102100,
+      "latestWkid": 3857
+    }
+  },
+  "scale": 6299.199999999999
+}

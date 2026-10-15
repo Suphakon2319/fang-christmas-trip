@@ -1,0 +1,12 @@
+.qa/
+backups/
+*.zip
+__pycache__/
+*.pyc
+.netlify/
+node_modules/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
