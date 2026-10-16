@@ -42,13 +42,13 @@ window.RouteInfographic = (() => {
     return {minutes:n,label:r.durationMinutes!==null&&r.durationMinutes!==undefined?'เวลาอ้างอิง':'เวลาที่เผื่อ',text:duration(n)};
   }
   function metrics(r) {
-    const dist = distance(r),time = timeInfo(r),amount=r.budgetExpenseId?(TripBudget.expenseAmount(r.budgetExpenseId)??TripData.defaultExpenses.find(e=>e.id===r.budgetExpenseId)?.amount):null;
+    const dist = distance(r),time = timeInfo(r);
     const fields = [
-      ['ระยะทาง',dist.km===null?'—':(dist.verified?'':'≈ ')+dist.km.toLocaleString('th-TH')+' กม.',dist.label,'distance'],
+      ['ระยะทาง',dist.km===null?(r.mapMode==='internal_walk'?'เดินในพื้นที่ · ยังไม่วัดระยะ':'ยังไม่ทราบระยะ'):(dist.verified?'':'≈ ')+dist.km.toLocaleString('th-TH')+' กม.',dist.label,'distance'],
       [time.label,time.text,time.label==='เวลาที่เผื่อ'?'แผนเบื้องต้น':'ตรวจวันเดินทางอีกครั้ง','duration'],
       ['เวลาออกตามแผน',r.departure,'','departure'],['ถึงตามแผน',r.arrival,'','arrival'],
       ['พาหนะ',r.transport,'สำหรับช่วงนี้','transport'],
-      [amount!==null?'งบจัดสรร / 2 คน':'ค่าเดินทาง / 2 คน',amount!==null?'≈ ฿'+amount.toLocaleString('th-TH'):r.costTHB===null?'—':'฿'+r.costTHB.toLocaleString('th-TH'),r.costTHB===null?'ไม่ใช้แทนงบทั้งวัน':'ตรวจวันเดินทางอีกครั้ง','cost']
+      ['งบช่วงนี้ / 2 คน','≈ '+TripBudget.money(TripRoutePrices.get(r).total)+(TripRoutePrices.get(r).unknown?' + รอราคา':''),'แบ่งจากงบทั้งทริป','cost']
     ];
     return '<div class="ri-metrics">'+fields.map(([label,value,note,key])=>`<div class="ri-metric"><small>${esc(label)}</small><strong data-route-value="${key}" data-route-id="${esc(r.id)}">${esc(value)}</strong></div>`).join('')+'</div>';
   }
@@ -81,6 +81,7 @@ window.RouteInfographic = (() => {
     return points.map(([x,y])=>[400+(x-(minX+maxX)/2)*cos*scale,225-(y-(minY+maxY)/2)*scale]);
   }
   function visual(r,{variant='card'}={}) {
+    if(!r.geometry)return diagram(r,variant);
     const uid='ri-'+(++serial),g=r.roadMap,area=r.areaMap||RealMapData.area;
     const image=g?.mapImage||area.image,extent=g?.mapExtent||area.extent;
     const merc=([lon,lat])=>[lon*20037508.342789244/180,Math.log(Math.tan(Math.PI/4+lat*Math.PI/360))*6378137];
@@ -107,12 +108,15 @@ window.RouteInfographic = (() => {
     </figure>`;
   }
 
-  function photos(r,{compact=false}={}) {
-    const dest=TripData.places.find(p=>p.id===r.toId);
-    const images=(r.photoIds||[]).map(id=>TripData.routePhotos[id]).filter(Boolean).slice(0,compact?1:2);
-    if(!images.length)return `<div class="ri-photos single"><figure class="ri-destination-photo" data-photo-place="${esc(r.toId)}"><div class="ri-photo">${TripApp.photo(dest)}</div><figcaption><strong>${esc(dest.name)}</strong>${dest.sourceUrl?`<a href="${esc(dest.sourceUrl)}" target="_blank" rel="noopener noreferrer">ชมภาพและข้อมูลที่ต้นฉบับ ↗</a>`:''}</figcaption></figure></div>`;
-    return `<div class="ri-photos single">${images.map(p=>`<figure class="ri-destination-photo" data-photo-id="${esc(p.id)}" data-photo-place="${esc(r.toId)}"><div class="ri-photo">${TripApp.photo(p)}</div><figcaption><strong>${esc(p.name)}</strong><a href="${esc(p.imageSource)}" target="_blank" rel="noopener noreferrer">${esc(p.imageCredit)} · ${esc(p.license)} ↗</a></figcaption></figure>`).join('')}</div>`;
+  function diagram(r,variant){
+    const uid='ri-'+(++serial),walk=r.mapMode==='internal_walk';
+    return `<figure class="ri-visual ri-${esc(variant)} v5-route-diagram" data-route-visual="${esc(r.id)}" data-map-status="illustrative" data-map-kind="${walk?'internal-walk':'unconfirmed-diagram'}"><div class="ri-map-top"><span>วันที่ ${r.day} · ช่วงที่ ${String(r.number).padStart(2,'0')}</span><span>${walk?'เดินภายในสถานที่':'แผนภาพจุดเริ่ม → จุดหมาย'}</span></div><svg class="ri-svg" viewBox="0 0 800 500" role="img" aria-labelledby="${uid}-title ${uid}-desc"><title id="${uid}-title">${esc(r.from)} ไป ${esc(r.to)}</title><desc id="${uid}-desc">${esc(r.mapNote)}</desc>${decoration(r,seed(r.id))}<g transform="translate(180 250)"><circle r="37" fill="#81ad8a" stroke="white" stroke-width="7"/><text text-anchor="middle" y="10" font-size="30" fill="white">A</text></g><text x="400" y="265" text-anchor="middle" font-size="55" fill="#ad9280">${walk?'🚶 →':'→'}</text><g transform="translate(620 250)"><circle r="37" fill="#db718c" stroke="white" stroke-width="7"/><text text-anchor="middle" y="10" font-size="30" fill="white">B</text></g><rect x="100" y="415" width="600" height="48" rx="24" fill="#fff9ed"/><text x="400" y="445" text-anchor="middle" font-size="18" fill="#806d58">${walk?'แผนผังความสัมพันธ์ ไม่ใช่ผังทางเดินจริง':'ยังไม่ยืนยันเส้นทางถนน'}</text></svg><div class="ri-endpoints"><div><b class="ri-letter a">A</b><span><small>เริ่มจาก</small><strong>${esc(r.from)}</strong></span></div><span class="ri-endpoint-arrow">→</span><div><b class="ri-letter b">B</b><span><small>ไปที่</small><strong>${esc(r.to)}</strong></span></div></div><figcaption class="v5-diagram-note">${esc(r.mapNote)}<br><a href="${esc(TripMap.directions(r))}" target="_blank" rel="noopener noreferrer">ค้นจุดหมาย / ตรวจทางภายนอก ↗</a></figcaption></figure>`;
   }
+
+  function photos(r,{compact=false}={}) {
+    return TripGallery.render(r.toId);
+  }
+
   function instructions(r,{compact=false}={}) {
     return `<ol class="ri-instructions">${r.steps.slice(0,compact?3:10).map((step,i)=>`<li><span>${i+1}</span><p>${esc(step)}</p></li>`).join('')}</ol>`;
   }
@@ -165,5 +169,5 @@ window.RouteInfographic = (() => {
     });
     document.addEventListener('click',e=>{const a=e.target.closest('[data-overview-day]');if(a)TripApp.selectDay(Number(a.dataset.overviewDay));});
   }
-  return {visual,metrics,contact,photos,instructions,facts,sources,editor,overview,distance,aggregate,timeInfo,status,init};
+  return {visual,metrics,contact,photos,instructions,facts,sources,editor,overview,distance,aggregate,timeInfo,status,init,escape:esc};
 })();

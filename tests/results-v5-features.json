@@ -1,0 +1,198 @@
+[
+  {
+    "name": "All image rights and central hero image agree",
+    "passed": true
+  },
+  {
+    "name": "Default per-route allocations reconcile without duplication",
+    "passed": true
+  },
+  {
+    "name": "Route day1-route1 matches timeline, prices, distance and maps at 1440",
+    "passed": true
+  },
+  {
+    "name": "Route day1-route2 matches timeline, prices, distance and maps at 1440",
+    "passed": true
+  },
+  {
+    "name": "Route day1-route3 matches timeline, prices, distance and maps at 1440",
+    "passed": true
+  },
+  {
+    "name": "Route day1-route4 matches timeline, prices, distance and maps at 1440",
+    "passed": true
+  },
+  {
+    "name": "Route day1-route5 matches timeline, prices, distance and maps at 1440",
+    "passed": true
+  },
+  {
+    "name": "Route day1-route6 matches timeline, prices, distance and maps at 1440",
+    "passed": true
+  },
+  {
+    "name": "Route day2-route1 matches timeline, prices, distance and maps at 1440",
+    "passed": true
+  },
+  {
+    "name": "Route day2-lunch matches timeline, prices, distance and maps at 1440",
+    "passed": true
+  },
+  {
+    "name": "Route day2-route2 matches timeline, prices, distance and maps at 1440",
+    "passed": true
+  },
+  {
+    "name": "Route day2-route3 matches timeline, prices, distance and maps at 1440",
+    "passed": true
+  },
+  {
+    "name": "Route day2-route4 matches timeline, prices, distance and maps at 1440",
+    "passed": true
+  },
+  {
+    "name": "Route day2-route5 matches timeline, prices, distance and maps at 1440",
+    "passed": true
+  },
+  {
+    "name": "Route day3-route1 matches timeline, prices, distance and maps at 1440",
+    "passed": true
+  },
+  {
+    "name": "Route day3-route2 matches timeline, prices, distance and maps at 1440",
+    "passed": true
+  },
+  {
+    "name": "Route day3-route3 matches timeline, prices, distance and maps at 1440",
+    "passed": true
+  },
+  {
+    "name": "Route day3-transfer matches timeline, prices, distance and maps at 1440",
+    "passed": true
+  },
+  {
+    "name": "Route day3-route4 matches timeline, prices, distance and maps at 1440",
+    "passed": true
+  },
+  {
+    "name": "Route day1-route1 matches timeline, prices, distance and maps at 360",
+    "passed": true
+  },
+  {
+    "name": "Route day1-route2 matches timeline, prices, distance and maps at 360",
+    "passed": true
+  },
+  {
+    "name": "Route day1-route3 matches timeline, prices, distance and maps at 360",
+    "passed": true
+  },
+  {
+    "name": "Route day1-route4 matches timeline, prices, distance and maps at 360",
+    "passed": true
+  },
+  {
+    "name": "Route day1-route5 matches timeline, prices, distance and maps at 360",
+    "passed": true
+  },
+  {
+    "name": "Route day1-route6 matches timeline, prices, distance and maps at 360",
+    "passed": true
+  },
+  {
+    "name": "Route day2-route1 matches timeline, prices, distance and maps at 360",
+    "passed": true
+  },
+  {
+    "name": "Route day2-lunch matches timeline, prices, distance and maps at 360",
+    "passed": true
+  },
+  {
+    "name": "Route day2-route2 matches timeline, prices, distance and maps at 360",
+    "passed": true
+  },
+  {
+    "name": "Route day2-route3 matches timeline, prices, distance and maps at 360",
+    "passed": true
+  },
+  {
+    "name": "Route day2-route4 matches timeline, prices, distance and maps at 360",
+    "passed": true
+  },
+  {
+    "name": "Route day2-route5 matches timeline, prices, distance and maps at 360",
+    "passed": true
+  },
+  {
+    "name": "Route day3-route1 matches timeline, prices, distance and maps at 360",
+    "passed": true
+  },
+  {
+    "name": "Route day3-route2 matches timeline, prices, distance and maps at 360",
+    "passed": true
+  },
+  {
+    "name": "Route day3-route3 matches timeline, prices, distance and maps at 360",
+    "passed": true
+  },
+  {
+    "name": "Route day3-transfer matches timeline, prices, distance and maps at 360",
+    "passed": true
+  },
+  {
+    "name": "Route day3-route4 matches timeline, prices, distance and maps at 360",
+    "passed": true
+  },
+  {
+    "name": "Hot spring gallery offers four licensed thumbnails",
+    "passed": true
+  },
+  {
+    "name": "Thumbnail changes image and keeps its instance focus",
+    "passed": true
+  },
+  {
+    "name": "Gallery next and previous controls update selected image",
+    "passed": true
+  },
+  {
+    "name": "Photo expands above presentation with source and license",
+    "passed": true
+  },
+  {
+    "name": "Lightbox keyboard changes photo without advancing slide",
+    "passed": true
+  },
+  {
+    "name": "Escape closes only lightbox and restores image focus",
+    "passed": true
+  },
+  {
+    "name": "Lightbox previous button changes photograph",
+    "passed": true
+  },
+  {
+    "name": "Editing daily food updates timeline, slide and destination immediately",
+    "passed": true
+  },
+  {
+    "name": "Fuel allocation is a subset of the single fuel ledger row",
+    "passed": true
+  },
+  {
+    "name": "No rental or hotel duplication on return routes",
+    "passed": true
+  },
+  {
+    "name": "Central photo permission changes immediately affect all renderers",
+    "passed": true
+  },
+  {
+    "name": "Existing V4 edited fuel and budget load without clobbering storage",
+    "passed": true
+  },
+  {
+    "name": "No runtime exceptions during V5 feature acceptance",
+    "passed": true
+  }
+]

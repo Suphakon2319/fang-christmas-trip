@@ -226,5 +226,53 @@
     "verifiedAt": "2026-10-16",
     "verificationStatus": "official",
     "notes": "personal report / static presentation ต้องคงเครดิต"
+  },
+  {
+    "id": "v5-hinoki-price",
+    "name": "รีวิว Hinoki ปี 2023 และส่วนหัวราคาแตกต่างกัน",
+    "address": null,
+    "latitude": null,
+    "longitude": null,
+    "phone": null,
+    "sourceUrl": "https://www.wongnai.com/reviews/bad7a89dde6b4559a5c12e0526bd73c6",
+    "verifiedAt": "2026-10-16",
+    "verificationStatus": "third_party",
+    "notes": "อ่านรีวิวต้นฉบับแล้ว ใช้เป็นประวัติราคา ไม่ยืนยัน ธ.ค. 2026"
+  },
+  {
+    "id": "v5-dnp-price",
+    "name": "เอกสารอัตราค่าบริการกรมอุทยานฯ จากผลค้นหา",
+    "address": null,
+    "latitude": null,
+    "longitude": null,
+    "phone": null,
+    "sourceUrl": "https://portal.dnp.go.th/DNP/FileSystem/download?uuid=7499cc88-52e1-43ee-aecd-1931ae5ca639.pdf",
+    "verifiedAt": "2026-10-16",
+    "verificationStatus": "unconfirmed",
+    "notes": "ดัชนีเว็บทางการระบุ 60 บาทชาวไทยผู้ใหญ่ แต่เปิด PDF ไม่สำเร็จ502 ไม่ตรวจวันที่มีผล"
+  },
+  {
+    "id": "v5-coffee-pin",
+    "name": "อาคาร Hinoki Coffee ใน OpenStreetMap",
+    "address": null,
+    "latitude": null,
+    "longitude": null,
+    "phone": null,
+    "sourceUrl": "https://www.openstreetmap.org/way/779041594",
+    "verifiedAt": "2026-10-16",
+    "verificationStatus": "third_party",
+    "notes": "Nominatim คืนอาคารคาเฟ่มีชื่อในพื้นที่ Hinoki Land ไม่ใช่ผังทางเดินหรือประตู"
+  },
+  {
+    "id": "v5-commons-search",
+    "name": "Wikimedia Commons image search",
+    "address": null,
+    "latitude": null,
+    "longitude": null,
+    "phone": null,
+    "sourceUrl": "https://commons.wikimedia.org/",
+    "verifiedAt": "2026-10-16",
+    "verificationStatus": "official",
+    "notes": "ค้นชื่อทุกสถานที่ เก็บผลค้น/ผู้ถ่าย/ใบอนุญาตใน photo_search_v5.json; ภาพร้านอื่นไม่มีผลที่ตรงและอนุญาต"
   }
 ]

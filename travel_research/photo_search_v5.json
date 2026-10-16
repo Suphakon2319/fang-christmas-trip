@@ -1,0 +1,1079 @@
+{
+  "verifiedAt": "2026-10-16",
+  "searches": [
+    {
+      "query": "\"JR Bike Rental Fang\"",
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22JR+Bike+Rental+Fang%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo&iiprop=url%7Cextmetadata",
+      "results": []
+    },
+    {
+      "query": "\"สส โฮมสเตย์\"",
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22%E0%B8%AA%E0%B8%AA+%E0%B9%82%E0%B8%AE%E0%B8%A1%E0%B8%AA%E0%B9%80%E0%B8%95%E0%B8%A2%E0%B9%8C%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo&iiprop=url%7Cextmetadata",
+      "results": []
+    },
+    {
+      "query": "\"Mae Mao\"",
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Mae+Mao%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo&iiprop=url%7Cextmetadata",
+      "results": [
+        {
+          "title": "File:Bulletin - United States National Museum (IA bulletinunitedst1861945unit).pdf",
+          "imageinfo": [
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Bulletin_-_United_States_National_Museum_%28IA_bulletinunitedst1861945unit%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Bulletin_-_United_States_National_Museum_(IA_bulletinunitedst1861945unit).pdf",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=92145420",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2020-07-12 03:02:04",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "<div class=\"fn\">\nBulletin - United States National Museum</div>",
+                  "source": "commons-desc-page"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Scans from the Internet Archive/unverified|PD US expired|Files from the Biodiversity Heritage Library|Scans from the Internet Archive|Books uploaded by Fæ|Books without Wikidata item|Books from the Biodiversity Heritage Library",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Artist": {
+                  "value": "<div class=\"fn value\">\n<dl><dd>United States National Museum</dd>\n<dd>Smithsonian Institution</dd>\n<dd>United States. Dept. of the Interior</dd></dl></div>",
+                  "source": "commons-desc-page"
+                },
+                "ImageDescription": {
+                  "value": "<div class=\"description\">\n<dl><dd>Many numbers issued in parts</dd>\n<dd>No. 56, pt. 2 and no. 82, v. 2 never published</dd>\n<dd>At head of title: nos. 1-33, Dept. of the Interior. U.S. National Museum; nos. 34- Smithsonian Institution</dd>\n<dd>extracted</dd>\n<dd>extracted</dd></dl>\n<br>Subjects: Science</div>",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<dl><dd><a href=\"//archive.org/details/bulletinunitedst1861945unit\" class=\"extiw\" title=\"iarchive:bulletinunitedst1861945unit\"><bdi class=\"description en\" lang=\"en\" dir=\"ltr\">Internet Archive identifier</bdi>: bulletinunitedst1861945unit</a></dd>\n<dd><a rel=\"nofollow\" class=\"external free\" href=\"https://archive.org/download/bulletinunitedst1861945unit/bulletinunitedst1861945unit.pdf\">https://archive.org/download/bulletinunitedst1861945unit/bulletinunitedst1861945unit.pdf</a></dd></dl>",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "Public domain",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Public domain",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "false",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Copyrighted": {
+                  "value": "False",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "pd",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title": "File:Environmental factors affecting ground mobility in Thailand- Preliminary survey- Appendix F- Hydrologic geometry - USACE-p266001coll1-4023.pdf",
+          "imageinfo": [
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Environmental_factors_affecting_ground_mobility_in_Thailand-_Preliminary_survey-_Appendix_F-_Hydrologic_geometry_-_USACE-p266001coll1-4023.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Environmental_factors_affecting_ground_mobility_in_Thailand-_Preliminary_survey-_Appendix_F-_Hydrologic_geometry_-_USACE-p266001coll1-4023.pdf",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=153144572",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2024-09-25 17:48:31",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Environmental factors affecting ground mobility in Thailand: Preliminary survey: Appendix F: Hydrologic geometry – Appendix F",
+                  "source": "commons-desc-page"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Uploaded with OpenRefine|PD US Army USACE|Books without Wikidata item|Images from USACE to check|Images from USACE, Technical reports collection",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Artist": {
+                  "value": "United States. Advanced Research Projects Agency",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<a rel=\"mw:ExtLink nofollow\" href=\"https://usace.contentdm.oclc.org/digital/collection/p266001coll1/id/4023\" class=\"external free\">https://usace.contentdm.oclc.org/digital/collection/p266001coll1/id/4023</a>",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "Public domain",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Public domain",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "false",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Copyrighted": {
+                  "value": "False",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "pd",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title": "File:Pedro primeiro.. (IA pedroprimeiro00rodr).pdf",
+          "imageinfo": [
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Pedro_primeiro.._%28IA_pedroprimeiro00rodr%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Pedro_primeiro.._(IA_pedroprimeiro00rodr).pdf",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=91799833",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2020-07-02 03:15:34",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "<div class=\"fn\">\nPedro primeiro..</div>",
+                  "source": "commons-desc-page"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "PD US expired|Books uploaded by Fæ|Books without Wikidata item|Books in the Library of Congress|PD-US missing SDC copyright status",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Artist": {
+                  "value": "<div class=\"fn value\">\nRodrigues da Casta, Antonio Joaquim. [from old catalog]</div>",
+                  "source": "commons-desc-page"
+                },
+                "ImageDescription": {
+                  "value": "<div class=\"description\">\nSubjects:</div>",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<dl><dd><a rel=\"nofollow\" class=\"external free\" href=\"https://archive.org/details/pedroprimeiro00rodr\">https://archive.org/details/pedroprimeiro00rodr</a></dd>\n<dd><a rel=\"nofollow\" class=\"external free\" href=\"https://archive.org/download/pedroprimeiro00rodr/pedroprimeiro00rodr.pdf\">https://archive.org/download/pedroprimeiro00rodr/pedroprimeiro00rodr.pdf</a></dd></dl>",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "Public domain",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Public domain",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "false",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Copyrighted": {
+                  "value": "False",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "pd",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "\"Ban Yang\" Fang",
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Ban+Yang%22+Fang&gsrnamespace=6&gsrlimit=5&prop=imageinfo&iiprop=url%7Cextmetadata",
+      "results": [
+        {
+          "title": "File:2019 01 Khao Soi Kai.jpg",
+          "imageinfo": [
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/2019_01_Khao_Soi_Kai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:2019_01_Khao_Soi_Kai.jpg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=76721246",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2019-02-20 11:14:00",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "2019 01 Khao Soi Kai",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Taken with Fujifilm X-T3|Self-published work|Chopsticks in Thailand|Files with coordinates missing SDC location of creation|Taken with Fujinon XF23mm F2.0 R WR|Thai-Muslim cuisine|Images of Thailand by User:Takeaway|Chicken khao soi in Thailand",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "GPSLatitude": {
+                  "value": "19.802838",
+                  "source": "commons-desc-page"
+                },
+                "GPSLongitude": {
+                  "value": "99.097252",
+                  "source": "commons-desc-page"
+                },
+                "GPSMapDatum": {
+                  "value": "WGS-84",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "<i><b>Khao soi kai</b></i> (chicken khao soi) at \"Khao Soi Yunnan Yasmine Ban Yang\" (Thai: ร้านข้าวซอยยูนานจัสมิน บ้านยาง) in a Muslim-Chinese village in between Fang and Doi Angkhang. This particular version of the dish is lighter but more flavourful in taste than most, with the chicken stewed separately from the curry broth, and with a larger amount of fresh herbs than usual. The noodles are hand-pulled lamian noodles.",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2019-01-28 11:33:31",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a href=\"//commons.wikimedia.org/wiki/User:Takeaway\" title=\"User:Takeaway\">Takeaway</a>",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "CC BY-SA 4.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution-Share Alike 4.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-sa-4.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title": "File:2019 01 Khao Soi Yunnan Yasmine Ban Yang noodle shop.jpg",
+          "imageinfo": [
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/2019_01_Khao_Soi_Yunnan_Yasmine_Ban_Yang_noodle_shop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:2019_01_Khao_Soi_Yunnan_Yasmine_Ban_Yang_noodle_shop.jpg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=76816002",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2019-02-24 13:06:59",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "2019 01 Khao Soi Yunnan Yasmine Ban Yang noodle shop",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Taken with Samsung Galaxy S8+|Chin Haw|Self-published work|Noodle restaurants in Thailand|Hijabs in Thailand|Files with coordinates missing SDC location of creation|Thai-Muslim cuisine|Images of Thailand by User:Takeaway",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "GPSLatitude": {
+                  "value": "19.802778",
+                  "source": "commons-desc-page"
+                },
+                "GPSLongitude": {
+                  "value": "99.097222",
+                  "source": "commons-desc-page"
+                },
+                "GPSMapDatum": {
+                  "value": "WGS-84",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "\"Khao Soi Yunnan Yasmine Ban Yang\" (Thai: ร้านข้าวซอยยูนานจัสมิน บ้านยาง) is a noodle shop in a Muslim-Chinese village in between Fang and Doi Angkhang.",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2019-01-28 11:26:12",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Takeaway\" title=\"User:Takeaway\">Takeaway</a>",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "CC BY-SA 4.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution-Share Alike 4.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-sa-4.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title": "File:ADH 0013 A. Damhoeri - Segumpal Emas Dibawah Kakiku.pdf",
+          "imageinfo": [
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/ADH_0013_A._Damhoeri_-_Segumpal_Emas_Dibawah_Kakiku.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:ADH_0013_A._Damhoeri_-_Segumpal_Emas_Dibawah_Kakiku.pdf",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=75843599",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2021-01-03 03:56:46",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "ADH 0013 A. Damhoeri - Segumpal Emas Dibawah Kakiku",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Items with VRTS permission confirmed|Images with extracted images|Scanned from A. Damhoeri's collection",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "Segumpal Emas Dibawah Kakiku dari Koleksi A. Damhoeri.",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "1985-10-22",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "Digitized from the original text from A. Damhoeri's collections",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<bdi><a href=\"https://www.wikidata.org/wiki/Q13091442\" class=\"extiw\" title=\"d:Q13091442\"><span title=\"Indonesian author (1915-2000)\">A. Damhoeri</span></a></bdi>",
+                  "source": "commons-desc-page"
+                },
+                "Permission": {
+                  "value": "<p><span class=\"layouttemplateargs\" style=\"display:none;speak:none;\" title=\"template=PermissionTicket 1%3Dhttps%3A%2F%2Fticket.wikimedia.org%2Fotrs%2Findex.pl%3FAction%3DAgentTicketZoom%26TicketNumber%3D2019011510000881 2%3D2019011510000881\"> </span>\n</p>\n<style data-mw-deduplicate=\"TemplateStyles:r1254222110\">.mw-parser-output .messagebox{margin:4px 0;width:auto;border-collapse:collapse;border:2px solid var(--border-color-progressive,#6485d1);background-color:var(--background-color-neutral-subtle,#fbfcff);color:var(--color-base,#202122);box-sizing:border-box;border-inline-start-width:8px}.mw-parser-output .messagebox.mbox-small{font-size:88%;line-height:1.25em}.mw-parser-output .mbox-warning,.mw-parser-output .mbox-speedy{border:2px solid var(--border-color-error,#b22222);background:var(--background-color-error-subtle,#ffdbdb);border-inline-start-width:8px}.mw-parser-output .mbox-serious,.mw-parser-output .mbox-delete,.mw-parser-output .mbox-stop{border:2px solid var(--border-color-error,#b22222);border-inline-start-width:8px}.mw-parser-output .mbox-issue,.mw-parser-output .mbox-content{border:2px solid #f28500;background:var(--background-color-warning-subtle,#ffe);border-inline-start-width:8px}.mw-parser-output .mbox-query,.mw-parser-output .mbox-style{border:2px solid #f4c430;background:var(--background-color-warning-subtle,#ffe);border-inline-start-width:8px}.mw-parser-output .mbox-shit{border:2px solid #960;border-inline-start-width:8px}.mw-parser-output .mbox-license{border:2px solid #88a;border-inline-start-width:initial}.mw-parser-output .mbox-legal{border:2px solid var(--border-color-notice,#666);background:var(--background-color-base,#fff);border-inline-start-width:8px}.mw-parser-output .mbox-honor{border:2px solid #ca3;background:var(--background-color-warning-subtle,#fcf4db);border-inline-start-width:8px}.mw-parser-output .mbox-growth{border:2px solid #8d4;background:var(--background-color-success-subtle,#d5fdf4);border-inline-start-width:8px}.mw-parser-output .mbox-move{border:2px solid #93c;border-inline-start-width:8px}.mw-parser-output .mbox-protection,.mw-parser-output .mbox-message{border:2px solid var(--border-color-base,#aaa);border-inline-start-width:8px}.mw-parser-output .messagebox .mbox-text{border:none;padding:0.25em 0.9em;width:100%}.mw-parser-output .messagebox .mbox-image{border:none;padding-top:2px;padding-bottom:2px;padding-inline-start:0.9em;padding-inline-end:0;text-align:center}.mw-parser-output .messagebox .mbox-imageright{border:none;padding-top:2px;padding-bottom:2px;padding-inline-start:0;padding-inline-end:0.9em;text-align:center}.mw-parser-output .messagebox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .messagebox .mbox-invalid-type{text-align:center}@media(min-width:720px){.mw-parser-output .messagebox{margin:4px 10%}.mw-parser-output .messagebox.mbox-small{clear:right;float:right;margin:4px 0 4px 1em;width:238px}}body.skin--responsive .mw-parser-output table.messagebox img{max-width:none!important}</style><table class=\"plainlinks messagebox mbox-notice layouttemplate\" role=\"presentation\" style=\"margin:0.3em 0;width:100%;\"><tbody><tr><td class=\"mbox-image\"><span typeof=\"mw:File\"><span title=\"VRT Wikimedia\"><img alt=\"VRT Wikimedia\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Permission_logo_2021.svg/120px-Permission_logo_2021.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"75\" height=\"48\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Permission_logo_2021.svg/250px-Permission_logo_2021.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"935\" data-file-height=\"600\"></span></span></td><td class=\"mbox-text\">This work is <a href=\"https://freedomdefined.org/Definition\" class=\"extiw\" title=\"freedomdefined:Definition\">free</a> and may be used by anyone for any purpose. If you wish to <b><a href=\"//commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia\" title=\"Commons:Reusing content outside Wikimedia\">use this content</a></b>, you do not need to request permission as long as you follow any licensing requirements mentioned on this page.\n<p>The Wikimedia Foundation has received an e-mail confirming that the copyright holder has approved publication under the terms mentioned on this page. This correspondence has been <b><span style=\"background:transparent;color:#0f7f1f;font-weight:400;\" title=\"transparent\">reviewed</span></b> by a <a href=\"//commons.wikimedia.org/wiki/Template:PermissionTicket/Users\" title=\"Template:PermissionTicket/Users\">Volunteer Response Team (VRT) member</a> and stored in our <a href=\"//commons.wikimedia.org/wiki/Commons:Volunteer_Response_Team\" title=\"Commons:Volunteer Response Team\">permission archive</a>. The correspondence is available to trusted volunteers as <b><a href=\"https://ticket.wikimedia.org/otrs/index.pl?Action=AgentTicketZoom&amp;TicketNumber=2019011510000881\" class=\"extiw\" title=\"ticket:2019011510000881\">ticket #2019011510000881</a></b>.\n</p><p><small>If you have questions about the archived correspondence, please use the <a href=\"//commons.wikimedia.org/wiki/Commons:Volunteer_Response_Team/Noticeboard\" title=\"Commons:Volunteer Response Team/Noticeboard\">VRT noticeboard</a>.</small>\n<small>Ticket link: <a class=\"external free\" href=\"https://ticket.wikimedia.org/otrs/index.pl?Action=AgentTicketZoom&amp;TicketNumber=2019011510000881\">https://ticket.wikimedia.org/otrs/index.pl?Action=AgentTicketZoom&amp;TicketNumber=2019011510000881</a></small>\n<br><small>Find other files from the same ticket:</small> <span typeof=\"mw:File\"><a href=\"https://wcqs-beta.wmflabs.org/#%23defaultView%3AImageGrid%09%0ASELECT%20%3Fimage%20%20%20%7B%0A%20%20%3Ffile%20wdt%3AP6305%20%222019011510000881%22%20.%0A%20%20%3Ffile%20schema%3Aurl%20%3Fimage.%0A%7D%20%0A\" title=\"SDC query (SPARQL)\" rel=\"nofollow\"><img alt=\"SDC query (SPARQL)\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Wikimedia_Commons_Query_Service_Logo.svg/20px-Wikimedia_Commons_Query_Service_Logo.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"15\" height=\"20\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Wikimedia_Commons_Query_Service_Logo.svg/40px-Wikimedia_Commons_Query_Service_Logo.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"512\" data-file-height=\"688\"></a></span>\n</p>\n<span id=\"field-otrs\" title=\"https://ticket.wikimedia.org/otrs/index.pl?Action=AgentTicketZoom&amp;TicketNumber=2019011510000881\"></span></td></tr></tbody></table>",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseShortName": {
+                  "value": "CC BY-SA 4.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution-Share Alike 4.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-sa-4.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "\"บ้านดินเล่าจาง\"",
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%94%E0%B8%B4%E0%B8%99%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%B2%E0%B8%88%E0%B8%B2%E0%B8%87%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo&iiprop=url%7Cextmetadata",
+      "results": []
+    },
+    {
+      "query": "\"Hinoki Land\"",
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Hinoki+Land%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo&iiprop=url%7Cextmetadata",
+      "results": []
+    },
+    {
+      "query": "\"Hinoki Coffee\" Thailand",
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Hinoki+Coffee%22+Thailand&gsrnamespace=6&gsrlimit=5&prop=imageinfo&iiprop=url%7Cextmetadata",
+      "results": []
+    },
+    {
+      "query": "\"โกดังหมูกระทะ\" ฝาง",
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22%E0%B9%82%E0%B8%81%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%97%E0%B8%B0%22+%E0%B8%9D%E0%B8%B2%E0%B8%87&gsrnamespace=6&gsrlimit=5&prop=imageinfo&iiprop=url%7Cextmetadata",
+      "results": []
+    },
+    {
+      "query": "\"ฮักแกะ\" ฝาง",
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B9%81%E0%B8%81%E0%B8%B0%22+%E0%B8%9D%E0%B8%B2%E0%B8%87&gsrnamespace=6&gsrlimit=5&prop=imageinfo&iiprop=url%7Cextmetadata",
+      "results": []
+    },
+    {
+      "query": "\"Chang Phueak bus station\"",
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Chang+Phueak+bus+station%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo&iiprop=url%7Cextmetadata",
+      "results": []
+    },
+    {
+      "query": "\"Fang bus station\"",
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Fang+bus+station%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo&iiprop=url%7Cextmetadata",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "query": "\"Chiang Mai Fang\" bus",
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Chiang+Mai+Fang%22+bus&gsrnamespace=6&gsrlimit=5&prop=imageinfo&iiprop=url%7Cextmetadata",
+      "error": "HTTP Error 429: Too Many Requests"
+    }
+  ],
+  "pinAndPhotoFollowup": [
+    {
+      "query": "JR Bike Rental Fang Thailand",
+      "url": "https://nominatim.openstreetmap.org/search?q=JR+Bike+Rental+Fang+Thailand&format=jsonv2&limit=3",
+      "status": 200,
+      "result": []
+    },
+    {
+      "query": "โกดังหมูกระทะ ฝาง เชียงใหม่",
+      "url": "https://nominatim.openstreetmap.org/search?q=%E0%B9%82%E0%B8%81%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%97%E0%B8%B0+%E0%B8%9D%E0%B8%B2%E0%B8%87+%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88&format=jsonv2&limit=3",
+      "status": 200,
+      "result": []
+    },
+    {
+      "query": "Hinoki Coffee Chai Prakan Thailand",
+      "url": "https://nominatim.openstreetmap.org/search?q=Hinoki+Coffee+Chai+Prakan+Thailand&format=jsonv2&limit=3",
+      "status": 200,
+      "result": [
+        {
+          "place_id": 240937696,
+          "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+          "osm_type": "way",
+          "osm_id": 779041594,
+          "lat": "19.6558096",
+          "lon": "99.1493182",
+          "category": "amenity",
+          "type": "cafe",
+          "place_rank": 30,
+          "importance": 5.000152590214416e-05,
+          "addresstype": "amenity",
+          "name": "Hinoki Coffee",
+          "display_name": "Hinoki Coffee, ถนนโชตนา, บ้านดงป่าสัก, บ้านผาหงส์, บ้านร้องธาร, ศรีดงเย็น, อำเภอไชยปราการ, จังหวัดเชียงใหม่, ประเทศไทย",
+          "boundingbox": [
+            "19.6556329",
+            "19.6559832",
+            "99.1490700",
+            "99.1494897"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "\"Fang bus station\"",
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Fang+bus+station%22&gsrnamespace=6&gsrlimit=4&prop=imageinfo&iiprop=url%7Cextmetadata",
+      "status": 200,
+      "result": {
+        "batchcomplete": ""
+      }
+    },
+    {
+      "query": "\"Chiang Mai Fang\" bus",
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Chiang+Mai+Fang%22+bus&gsrnamespace=6&gsrlimit=4&prop=imageinfo&iiprop=url%7Cextmetadata",
+      "status": 200,
+      "result": {
+        "batchcomplete": ""
+      }
+    },
+    {
+      "query": "\"Chang Phuak\" bus",
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Chang+Phuak%22+bus&gsrnamespace=6&gsrlimit=4&prop=imageinfo&iiprop=url%7Cextmetadata",
+      "status": 200,
+      "result": {
+        "batchcomplete": "",
+        "continue": {
+          "gsroffset": 4,
+          "continue": "gsroffset||"
+        },
+        "query": {
+          "pages": {
+            "55033641": {
+              "pageid": 55033641,
+              "ns": 6,
+              "title": "File:Chang Phuak Busstation P 20170115 120437.jpg",
+              "index": 1,
+              "imagerepository": "local",
+              "imageinfo": [
+                {
+                  "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Chang_Phuak_Busstation_P_20170115_120437.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                  "descriptionurl": "https://commons.wikimedia.org/wiki/File:Chang_Phuak_Busstation_P_20170115_120437.jpg",
+                  "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=55033641",
+                  "extmetadata": {
+                    "DateTime": {
+                      "value": "2017-01-15 11:16:59",
+                      "source": "mediawiki-metadata",
+                      "hidden": ""
+                    },
+                    "ObjectName": {
+                      "value": "Chang Phuak Busstation P 20170115 120437",
+                      "source": "mediawiki-metadata"
+                    },
+                    "CommonsMetadataExtension": {
+                      "value": 1.2,
+                      "source": "extension",
+                      "hidden": ""
+                    },
+                    "Categories": {
+                      "value": "Self-published work|Files with coordinates missing SDC location of creation|Chang Phuak Bus station",
+                      "source": "commons-categories",
+                      "hidden": ""
+                    },
+                    "Assessments": {
+                      "value": "",
+                      "source": "commons-categories",
+                      "hidden": ""
+                    },
+                    "GPSLatitude": {
+                      "value": "18.800090",
+                      "source": "commons-desc-page"
+                    },
+                    "GPSLongitude": {
+                      "value": "98.986710",
+                      "source": "commons-desc-page"
+                    },
+                    "GPSMapDatum": {
+                      "value": "WGS-84",
+                      "source": "commons-desc-page",
+                      "hidden": ""
+                    },
+                    "ImageDescription": {
+                      "value": "Station building Chang Phuak Bus station in Chiang Mai",
+                      "source": "commons-desc-page"
+                    },
+                    "DateTimeOriginal": {
+                      "value": "2017-01-15 12:04:37",
+                      "source": "commons-desc-page"
+                    },
+                    "Credit": {
+                      "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                      "source": "commons-desc-page"
+                    },
+                    "Artist": {
+                      "value": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:FredTC\" title=\"User:FredTC\">FredTC</a>",
+                      "source": "commons-desc-page"
+                    },
+                    "LicenseShortName": {
+                      "value": "CC BY-SA 4.0",
+                      "source": "commons-desc-page",
+                      "hidden": ""
+                    },
+                    "UsageTerms": {
+                      "value": "Creative Commons Attribution-Share Alike 4.0",
+                      "source": "commons-desc-page"
+                    },
+                    "AttributionRequired": {
+                      "value": "true",
+                      "source": "commons-desc-page",
+                      "hidden": ""
+                    },
+                    "LicenseUrl": {
+                      "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                      "source": "commons-desc-page"
+                    },
+                    "Copyrighted": {
+                      "value": "True",
+                      "source": "commons-desc-page",
+                      "hidden": ""
+                    },
+                    "Restrictions": {
+                      "value": "",
+                      "source": "commons-desc-page",
+                      "hidden": ""
+                    },
+                    "License": {
+                      "value": "cc-by-sa-4.0",
+                      "source": "commons-templates",
+                      "hidden": ""
+                    }
+                  }
+                }
+              ]
+            },
+            "55033642": {
+              "pageid": 55033642,
+              "ns": 6,
+              "title": "File:Chang Phuak Busstation P 20170115 120514.jpg",
+              "index": 3,
+              "imagerepository": "local",
+              "imageinfo": [
+                {
+                  "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Chang_Phuak_Busstation_P_20170115_120514.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                  "descriptionurl": "https://commons.wikimedia.org/wiki/File:Chang_Phuak_Busstation_P_20170115_120514.jpg",
+                  "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=55033642",
+                  "extmetadata": {
+                    "DateTime": {
+                      "value": "2017-01-15 11:17:00",
+                      "source": "mediawiki-metadata",
+                      "hidden": ""
+                    },
+                    "ObjectName": {
+                      "value": "Chang Phuak Busstation P 20170115 120514",
+                      "source": "mediawiki-metadata"
+                    },
+                    "CommonsMetadataExtension": {
+                      "value": 1.2,
+                      "source": "extension",
+                      "hidden": ""
+                    },
+                    "Categories": {
+                      "value": "Self-published work|Files with coordinates missing SDC location of creation|Chang Phuak Bus station",
+                      "source": "commons-categories",
+                      "hidden": ""
+                    },
+                    "Assessments": {
+                      "value": "",
+                      "source": "commons-categories",
+                      "hidden": ""
+                    },
+                    "GPSLatitude": {
+                      "value": "18.800090",
+                      "source": "commons-desc-page"
+                    },
+                    "GPSLongitude": {
+                      "value": "98.986710",
+                      "source": "commons-desc-page"
+                    },
+                    "GPSMapDatum": {
+                      "value": "WGS-84",
+                      "source": "commons-desc-page",
+                      "hidden": ""
+                    },
+                    "ImageDescription": {
+                      "value": "Station building Chang Phuak Bus station in Chiang Mai",
+                      "source": "commons-desc-page"
+                    },
+                    "DateTimeOriginal": {
+                      "value": "2017-01-15 12:05:14",
+                      "source": "commons-desc-page"
+                    },
+                    "Credit": {
+                      "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                      "source": "commons-desc-page"
+                    },
+                    "Artist": {
+                      "value": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:FredTC\" title=\"User:FredTC\">FredTC</a>",
+                      "source": "commons-desc-page"
+                    },
+                    "LicenseShortName": {
+                      "value": "CC BY-SA 4.0",
+                      "source": "commons-desc-page",
+                      "hidden": ""
+                    },
+                    "UsageTerms": {
+                      "value": "Creative Commons Attribution-Share Alike 4.0",
+                      "source": "commons-desc-page"
+                    },
+                    "AttributionRequired": {
+                      "value": "true",
+                      "source": "commons-desc-page",
+                      "hidden": ""
+                    },
+                    "LicenseUrl": {
+                      "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                      "source": "commons-desc-page"
+                    },
+                    "Copyrighted": {
+                      "value": "True",
+                      "source": "commons-desc-page",
+                      "hidden": ""
+                    },
+                    "Restrictions": {
+                      "value": "",
+                      "source": "commons-desc-page",
+                      "hidden": ""
+                    },
+                    "License": {
+                      "value": "cc-by-sa-4.0",
+                      "source": "commons-templates",
+                      "hidden": ""
+                    }
+                  }
+                }
+              ]
+            },
+            "55033645": {
+              "pageid": 55033645,
+              "ns": 6,
+              "title": "File:Chang Phuak Busstation P 20170115 120629.jpg",
+              "index": 2,
+              "imagerepository": "local",
+              "imageinfo": [
+                {
+                  "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Chang_Phuak_Busstation_P_20170115_120629.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                  "descriptionurl": "https://commons.wikimedia.org/wiki/File:Chang_Phuak_Busstation_P_20170115_120629.jpg",
+                  "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=55033645",
+                  "extmetadata": {
+                    "DateTime": {
+                      "value": "2017-01-15 11:17:03",
+                      "source": "mediawiki-metadata",
+                      "hidden": ""
+                    },
+                    "ObjectName": {
+                      "value": "Chang Phuak Busstation P 20170115 120629",
+                      "source": "mediawiki-metadata"
+                    },
+                    "CommonsMetadataExtension": {
+                      "value": 1.2,
+                      "source": "extension",
+                      "hidden": ""
+                    },
+                    "Categories": {
+                      "value": "Self-published work|Files with coordinates missing SDC location of creation|Chang Phuak Bus station",
+                      "source": "commons-categories",
+                      "hidden": ""
+                    },
+                    "Assessments": {
+                      "value": "",
+                      "source": "commons-categories",
+                      "hidden": ""
+                    },
+                    "GPSLatitude": {
+                      "value": "18.800090",
+                      "source": "commons-desc-page"
+                    },
+                    "GPSLongitude": {
+                      "value": "98.986710",
+                      "source": "commons-desc-page"
+                    },
+                    "GPSMapDatum": {
+                      "value": "WGS-84",
+                      "source": "commons-desc-page",
+                      "hidden": ""
+                    },
+                    "ImageDescription": {
+                      "value": "Station building Chang Phuak Bus station in Chiang Mai",
+                      "source": "commons-desc-page"
+                    },
+                    "DateTimeOriginal": {
+                      "value": "2017-01-15 12:06:29",
+                      "source": "commons-desc-page"
+                    },
+                    "Credit": {
+                      "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                      "source": "commons-desc-page"
+                    },
+                    "Artist": {
+                      "value": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:FredTC\" title=\"User:FredTC\">FredTC</a>",
+                      "source": "commons-desc-page"
+                    },
+                    "LicenseShortName": {
+                      "value": "CC BY-SA 4.0",
+                      "source": "commons-desc-page",
+                      "hidden": ""
+                    },
+                    "UsageTerms": {
+                      "value": "Creative Commons Attribution-Share Alike 4.0",
+                      "source": "commons-desc-page"
+                    },
+                    "AttributionRequired": {
+                      "value": "true",
+                      "source": "commons-desc-page",
+                      "hidden": ""
+                    },
+                    "LicenseUrl": {
+                      "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                      "source": "commons-desc-page"
+                    },
+                    "Copyrighted": {
+                      "value": "True",
+                      "source": "commons-desc-page",
+                      "hidden": ""
+                    },
+                    "Restrictions": {
+                      "value": "",
+                      "source": "commons-desc-page",
+                      "hidden": ""
+                    },
+                    "License": {
+                      "value": "cc-by-sa-4.0",
+                      "source": "commons-templates",
+                      "hidden": ""
+                    }
+                  }
+                }
+              ]
+            },
+            "55033647": {
+              "pageid": 55033647,
+              "ns": 6,
+              "title": "File:Chang Phuak Busstation Shrine P 20170115 120310.jpg",
+              "index": 4,
+              "imagerepository": "local",
+              "imageinfo": [
+                {
+                  "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Chang_Phuak_Busstation_Shrine_P_20170115_120310.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                  "descriptionurl": "https://commons.wikimedia.org/wiki/File:Chang_Phuak_Busstation_Shrine_P_20170115_120310.jpg",
+                  "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=55033647",
+                  "extmetadata": {
+                    "DateTime": {
+                      "value": "2017-01-15 11:17:06",
+                      "source": "mediawiki-metadata",
+                      "hidden": ""
+                    },
+                    "ObjectName": {
+                      "value": "Chang Phuak Busstation Shrine P 20170115 120310",
+                      "source": "mediawiki-metadata"
+                    },
+                    "CommonsMetadataExtension": {
+                      "value": 1.2,
+                      "source": "extension",
+                      "hidden": ""
+                    },
+                    "Categories": {
+                      "value": "Self-published work|Files with coordinates missing SDC location of creation|Chang Phuak Bus station",
+                      "source": "commons-categories",
+                      "hidden": ""
+                    },
+                    "Assessments": {
+                      "value": "",
+                      "source": "commons-categories",
+                      "hidden": ""
+                    },
+                    "GPSLatitude": {
+                      "value": "18.800580",
+                      "source": "commons-desc-page"
+                    },
+                    "GPSLongitude": {
+                      "value": "98.986090",
+                      "source": "commons-desc-page"
+                    },
+                    "GPSMapDatum": {
+                      "value": "WGS-84",
+                      "source": "commons-desc-page",
+                      "hidden": ""
+                    },
+                    "ImageDescription": {
+                      "value": "The elephant shrine after which the bus station is named",
+                      "source": "commons-desc-page"
+                    },
+                    "DateTimeOriginal": {
+                      "value": "2017-01-15 12:03:10",
+                      "source": "commons-desc-page"
+                    },
+                    "Credit": {
+                      "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                      "source": "commons-desc-page"
+                    },
+                    "Artist": {
+                      "value": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:FredTC\" title=\"User:FredTC\">FredTC</a>",
+                      "source": "commons-desc-page"
+                    },
+                    "LicenseShortName": {
+                      "value": "CC BY-SA 4.0",
+                      "source": "commons-desc-page",
+                      "hidden": ""
+                    },
+                    "UsageTerms": {
+                      "value": "Creative Commons Attribution-Share Alike 4.0",
+                      "source": "commons-desc-page"
+                    },
+                    "AttributionRequired": {
+                      "value": "true",
+                      "source": "commons-desc-page",
+                      "hidden": ""
+                    },
+                    "LicenseUrl": {
+                      "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                      "source": "commons-desc-page"
+                    },
+                    "Copyrighted": {
+                      "value": "True",
+                      "source": "commons-desc-page",
+                      "hidden": ""
+                    },
+                    "Restrictions": {
+                      "value": "",
+                      "source": "commons-desc-page",
+                      "hidden": ""
+                    },
+                    "License": {
+                      "value": "cc-by-sa-4.0",
+                      "source": "commons-templates",
+                      "hidden": ""
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "query": "\"อ่างเก็บน้ำแม่มาว\"",
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22%E0%B8%AD%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%9A%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B2%E0%B8%A7%22&gsrnamespace=6&gsrlimit=4&prop=imageinfo&iiprop=url%7Cextmetadata",
+      "status": 200,
+      "result": {
+        "batchcomplete": ""
+      }
+    },
+    {
+      "query": "\"สถานีขนส่งช้างเผือก\"",
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B8%B5%E0%B8%82%E0%B8%99%E0%B8%AA%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B9%80%E0%B8%9C%E0%B8%B7%E0%B8%AD%E0%B8%81%22&gsrnamespace=6&gsrlimit=4&prop=imageinfo&iiprop=url%7Cextmetadata",
+      "status": 200,
+      "result": {
+        "batchcomplete": ""
+      }
+    }
+  ],
+  "limitations": "ไม่พบผลไม่ได้พิสูจน์ว่าไม่มีภาพหรือไม่มีร้าน; สองคำค้นเดิมโดน429และค้นซ้ำสำเร็จ บันทึกสิทธิ์แยกทุกภาพ ไม่ใช้ภาพร้านอื่นแทน"
+}

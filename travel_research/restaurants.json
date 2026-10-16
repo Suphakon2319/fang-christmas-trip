@@ -86,13 +86,13 @@
     "id": "coffee",
     "name": "ฮิโนกิคอฟฟี่",
     "address": null,
-    "latitude": null,
-    "longitude": null,
+    "latitude": 19.6558096,
+    "longitude": 99.1493182,
     "phone": null,
     "sourceUrl": "https://hinokiland.com/",
     "verifiedAt": "2026-10-16",
     "verificationStatus": "official",
-    "notes": "อยู่ภายใน Hinoki Land; ใช้ทางเข้า Hinoki เป็นจุดอ้างอิงพื้นที่เท่านั้น ไม่สร้างพิกัดคาเฟ่แยก",
+    "notes": "พบอาคารคาเฟ่ Hinoki Coffee ใน OSM way 779041594 ตรงกับพื้นที่ Hinoki Land; พิกัดเป็นศูนย์กลางอาคาร ไม่ใช่ประตูหรือผังทางเดิน ใช้เดินในบริเวณและถามเจ้าหน้าที่",
     "day": 2,
     "type": "ร้านอาหาร",
     "duration": "แวะตามเวลาที่เผื่อ",
@@ -107,6 +107,13 @@
       "เครื่องดื่ม; ตรวจเมนูปัจจุบัน"
     ],
     "menuPriceTHB": null,
-    "reservationStatus": "unconfirmed"
+    "reservationStatus": "unconfirmed",
+    "coordinateSourceUrl": "https://www.openstreetmap.org/way/779041594",
+    "coordinateStatus": "third_party",
+    "fieldStatus": {
+      "coordinates": "third_party",
+      "openingHours": "official",
+      "entryTHB": "unconfirmed"
+    }
   }
 ]

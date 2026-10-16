@@ -6,8 +6,8 @@ window.TripBudget = (() => {
   const clone=x=>JSON.parse(JSON.stringify(x));
   const round=x=>Math.round((x+Number.EPSILON)*100)/100;
   const money=x=>'฿'+Number(x).toLocaleString('th-TH',{maximumFractionDigits:2});
-  const defaults=()=>({schemaVersion:4,budget:6000,expenses:clone(TripData.defaultExpenses),
-    fuel:{mode:'routes',distance:null,efficiency:35,price:40,date:'',detour:15,allowance:160},origin:'v4'});
+  const defaults=()=>({schemaVersion:4,budget:TripResearch.prices.budgetTHB,expenses:clone(TripData.defaultExpenses),
+    fuel:{mode:'routes',distance:null,efficiency:TripResearch.prices.fuel.efficiencyKmPerLitre,price:TripResearch.prices.fuel.pricePerLitreTHB,date:TripResearch.prices.fuel.priceDate||'',detour:TripResearch.prices.fuel.detourPercent,allowance:TripResearch.prices.fuel.allowanceTHB},origin:'v4'});
   const validNumber=(x,max=10000000)=>typeof x==='number'&&Number.isFinite(x)&&x>=0&&x<=max;
   function validate(x) {
     return x&&validNumber(x.budget)&&Array.isArray(x.expenses)&&x.expenses.length<=500&&
@@ -68,6 +68,7 @@ window.TripBudget = (() => {
     });
   }
   function renderTotals() {
+    window.TripRoutePrices?.refresh();window.dispatchEvent(new Event('trip:budget-rendered'));
     const spent=total(),a=allocation();
     document.getElementById('planned-total').textContent=money(spent);
     document.getElementById('remaining-total').textContent=money(a.unallocated);
@@ -114,7 +115,7 @@ window.TripBudget = (() => {
     state=defaults();let note='';
     try {
       const v4=localStorage.getItem(KEY);
-      if(v4!==null){const x=JSON.parse(v4);if(validate(x))state=normalize(x);else{storageBlocked=true;note='ข้อมูล V4 อ่านไม่ได้ · ยังไม่บันทึกทับ';}}
+      if(v4!==null){const x=JSON.parse(v4);if(validate(x)){state=normalize(x);migrated=true;}else{storageBlocked=true;note='ข้อมูล V4 อ่านไม่ได้ · ยังไม่บันทึกทับ';}}
       else {
         const v2=localStorage.getItem(V2_KEY),v1=localStorage.getItem(OLD_KEY);
         const previous=v2??v1;
@@ -123,6 +124,7 @@ window.TripBudget = (() => {
     } catch(e){storageBlocked=true;note='อ่านข้อมูลเดิมไม่ได้ · เก็บข้อมูลเดิมไว้';}
     document.getElementById('budget-summary').innerHTML='<div class="budget-stat"><small>งบทั้งหมด · แก้ไขได้</small><strong>฿<input id="budget-limit" aria-label="งบทั้งหมด" type="number" min="0" max="10000000" step="100"></strong></div><div class="budget-stat"><small>จัดสรรรวมเงินสำรอง</small><strong id="planned-total"></strong></div><div class="budget-stat"><small>เงินที่ยังไม่จัดสรร</small><strong id="remaining-total"></strong></div><div class="budget-stat"><small>ยอดจัดสรรต่อคน / รวมสำรอง</small><strong id="person-total"></strong></div>';
     loadInputs();renderRows();updateFuel({initial:true});
+    const reconciliation=document.createElement('div');reconciliation.id='v5-budget-reconciliation';reconciliation.className='v5-budget-reconciliation';document.querySelector('#budget-health').after(reconciliation);TripRoutePrices.refresh();
     if(note)document.getElementById('save-state').textContent=note;
     document.getElementById('budget-limit').addEventListener('input',e=>{if(e.target.value===''||!e.target.checkValidity())return;state.budget=Number(e.target.value);renderTotals();save();});
     document.getElementById('expense-rows').addEventListener('input',e=>{
@@ -132,7 +134,7 @@ window.TripBudget = (() => {
       if(field==='day')item.day=Number(e.target.value);
       if(field==='name')item.name=e.target.value;
       if(field==='priceStatus'&&item.id!=='fuel'&&Object.hasOwn(priceLabels,e.target.value)){item.priceStatus=e.target.value;item.verificationStatus=e.target.value==='confirmed'?'confirmed':'estimated';}
-      renderTotals();document.querySelectorAll('[data-route-value=cost]').forEach(node=>{const r=TripData.routes.find(r=>r.id===node.dataset.routeId);if(r?.budgetExpenseId){const e=state.expenses.find(e=>e.id===r.budgetExpenseId);node.textContent=e?'≈ '+money(e.amount):'—';}});save();
+      renderTotals();save();
     });
     document.getElementById('expense-rows').addEventListener('click',e=>{const id=e.target.dataset.remove;if(!id||id==='fuel')return;state.expenses=state.expenses.filter(x=>x.id!==id);renderRows();renderTotals();save();});
     document.getElementById('add-expense').addEventListener('click',()=>{

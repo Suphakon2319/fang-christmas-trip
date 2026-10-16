@@ -1,0 +1,632 @@
+{
+  "version": 5,
+  "verifiedAt": "2026-10-16",
+  "browser": [
+    {
+      "name": "Direct file open completely offline",
+      "passed": true
+    },
+    {
+      "name": "Seventeen routes, all three days complete",
+      "passed": true
+    },
+    {
+      "name": "Thai interface and local Thai fonts regression",
+      "passed": true
+    },
+    {
+      "name": "Checklist and contact editing persist after reload",
+      "passed": true
+    },
+    {
+      "name": "No embedded maps, community tiles, or routing requests",
+      "passed": true
+    },
+    {
+      "name": "Overview shows three static route lanes",
+      "passed": true
+    },
+    {
+      "name": "Timeline uses shared infographic for every shown route",
+      "passed": true
+    },
+    {
+      "name": "Routes use offline road maps or explicit A to B diagrams",
+      "passed": true
+    },
+    {
+      "name": "Ten sourced road paths replace decorative curves",
+      "passed": true
+    },
+    {
+      "name": "All A/B labels agree with route source data",
+      "passed": true
+    },
+    {
+      "name": "Unknown shop locations never receive a fabricated route line",
+      "passed": true
+    },
+    {
+      "name": "All ten road maps retain sources and matching Web Mercator extents",
+      "passed": true
+    },
+    {
+      "name": "Status badges have been removed from route maps",
+      "passed": true
+    },
+    {
+      "name": "Pending labels are absent from route titles and departure times",
+      "passed": true
+    },
+    {
+      "name": "Displayed photographs have established reuse rights",
+      "passed": true
+    },
+    {
+      "name": "All 17 logical route endpoints form a continuous chain",
+      "passed": true
+    },
+    {
+      "name": "JR is the pickup and return choice without fabricated coordinates",
+      "passed": true
+    },
+    {
+      "name": "Restaurant route starts at Laojang, not the museum",
+      "passed": true
+    },
+    {
+      "name": "Bus time remains separate from the car routing model",
+      "passed": true
+    },
+    {
+      "name": "Unknown current prices remain null and not zero",
+      "passed": true
+    },
+    {
+      "name": "Contact section includes callable JR and restaurant contacts",
+      "passed": true
+    },
+    {
+      "name": "Claiming verified without geometry cannot change map status",
+      "passed": true
+    },
+    {
+      "name": "Every road label has a source",
+      "passed": true
+    },
+    {
+      "name": "Every route has seven travel instruction fields and contextual photos",
+      "passed": true
+    },
+    {
+      "name": "No fabricated distances, prices or actual durations",
+      "passed": true
+    },
+    {
+      "name": "Day two includes Yunnan restaurant as a separate route",
+      "passed": true
+    },
+    {
+      "name": "Keyboard day navigation and explicit return-to-station leg",
+      "passed": true
+    },
+    {
+      "name": "Detail modal uses same route component and full travel facts",
+      "passed": true
+    },
+    {
+      "name": "Detail editor is available without overwriting route facts",
+      "passed": true
+    },
+    {
+      "name": "External navigation links encode endpoints",
+      "passed": true
+    },
+    {
+      "name": "Escape closes route detail",
+      "passed": true
+    },
+    {
+      "name": "View A/B map opens static infographic",
+      "passed": true
+    },
+    {
+      "name": "New default allocation is honest about exceeding budget",
+      "passed": true
+    },
+    {
+      "name": "Reserve, operating expenses, unallocated funds are distinct",
+      "passed": true
+    },
+    {
+      "name": "Daily allocation and per-person totals are visible",
+      "passed": true
+    },
+    {
+      "name": "New route-linked fuel shows unknown distance instead of fake total",
+      "passed": true
+    },
+    {
+      "name": "Unknown fuel is a single labelled allowance",
+      "passed": true
+    },
+    {
+      "name": "Manual fuel plus 15 percent detour, without duplicate charge",
+      "passed": true
+    },
+    {
+      "name": "Editing a route updates fuel aggregate and preserves unknown-leg allowance",
+      "passed": true
+    },
+    {
+      "name": "Manual route distance is explicitly an estimate",
+      "passed": true
+    },
+    {
+      "name": "All route distances recompute motorcycle litres and detour",
+      "passed": true
+    },
+    {
+      "name": "Bus kilometres never enter motorcycle fuel",
+      "passed": true
+    },
+    {
+      "name": "Route overrides and V4 budget persist after file reload",
+      "passed": true
+    },
+    {
+      "name": "V1 migration preserves custom expense, total, budget and manual distance",
+      "passed": true
+    },
+    {
+      "name": "V1 original is byte-identical and no V4 write occurs on load",
+      "passed": true
+    },
+    {
+      "name": "Legacy notes, checklist, theme survive",
+      "passed": true
+    },
+    {
+      "name": "Editing migrated data saves V4 without changing V1",
+      "passed": true
+    },
+    {
+      "name": "Confirmed and estimated prices can be separated by user",
+      "passed": true
+    },
+    {
+      "name": "Add expense regression",
+      "passed": true
+    },
+    {
+      "name": "Delete expense regression",
+      "passed": true
+    },
+    {
+      "name": "Reset cancellation preserves user budget",
+      "passed": true
+    },
+    {
+      "name": "Explicit reset affects V4 only",
+      "passed": true
+    },
+    {
+      "name": "Corrupt V4 data is never silently overwritten",
+      "passed": true
+    },
+    {
+      "name": "V2 migration preserves custom item, total and fuel without writing either key",
+      "passed": true
+    },
+    {
+      "name": "V2 edit saves V4 and leaves original V2 byte-identical",
+      "passed": true
+    },
+    {
+      "name": "Old route distances migrate only for unchanged endpoints",
+      "passed": true
+    },
+    {
+      "name": "Dark mode regression",
+      "passed": true
+    },
+    {
+      "name": "Destination gallery details regression",
+      "passed": true
+    },
+    {
+      "name": "Gallery uses licensed photos, four thumbnails and honest placeholders",
+      "passed": true
+    },
+    {
+      "name": "Four price categories are selectable in the budget",
+      "passed": true
+    },
+    {
+      "name": "Presentation starts with 22 slides",
+      "passed": true
+    },
+    {
+      "name": "Fullscreen enters",
+      "passed": true
+    },
+    {
+      "name": "Fullscreen exits",
+      "passed": true
+    },
+    {
+      "name": "Next button regression",
+      "passed": true
+    },
+    {
+      "name": "Keyboard next reaches route one",
+      "passed": true
+    },
+    {
+      "name": "Research routes and displayed routes are the same live objects",
+      "passed": true
+    },
+    {
+      "name": "A central route edit immediately updates Timeline and Presentation",
+      "passed": true
+    },
+    {
+      "name": "Bus allocation uses the same edited budget in both views",
+      "passed": true
+    },
+    {
+      "name": "Previous button regression",
+      "passed": true
+    },
+    {
+      "name": "Exactly one shared route component per route slide",
+      "passed": true
+    },
+    {
+      "name": "Presentation route labels and endpoint data agree",
+      "passed": true
+    },
+    {
+      "name": "Next clamps at final slide",
+      "passed": true
+    },
+    {
+      "name": "Previous clamps at first slide",
+      "passed": true
+    },
+    {
+      "name": "Escape returns from presentation and restores scroll",
+      "passed": true
+    },
+    {
+      "name": "Planner no horizontal overflow 360",
+      "passed": true
+    },
+    {
+      "name": "Presentation map and text fit width 360",
+      "passed": true
+    },
+    {
+      "name": "Mobile swipe also works over static infographic",
+      "passed": true
+    },
+    {
+      "name": "Planner no horizontal overflow 390",
+      "passed": true
+    },
+    {
+      "name": "Presentation map and text fit width 390",
+      "passed": true
+    },
+    {
+      "name": "Planner no horizontal overflow 768",
+      "passed": true
+    },
+    {
+      "name": "Presentation map and text fit width 768",
+      "passed": true
+    },
+    {
+      "name": "Planner no horizontal overflow 1024",
+      "passed": true
+    },
+    {
+      "name": "Presentation map and text fit width 1024",
+      "passed": true
+    },
+    {
+      "name": "Planner no horizontal overflow 1440",
+      "passed": true
+    },
+    {
+      "name": "Presentation map and text fit width 1440",
+      "passed": true
+    },
+    {
+      "name": "Desktop route fits single slide 1440",
+      "passed": true
+    },
+    {
+      "name": "Every desktop route fits its slide 1440",
+      "passed": true
+    },
+    {
+      "name": "Planner no horizontal overflow 1920",
+      "passed": true
+    },
+    {
+      "name": "Presentation map and text fit width 1920",
+      "passed": true
+    },
+    {
+      "name": "Desktop route fits single slide 1920",
+      "passed": true
+    },
+    {
+      "name": "Every desktop route fits its slide 1920",
+      "passed": true
+    },
+    {
+      "name": "CSS chart fallback regression",
+      "passed": true
+    },
+    {
+      "name": "Print contains all 17 route infographics and full budget",
+      "passed": true
+    },
+    {
+      "name": "SVG accessibility IDs remain unique during print",
+      "passed": true
+    },
+    {
+      "name": "Actual browser PDF generated with all routes",
+      "passed": true
+    },
+    {
+      "name": "After printing planner controls are restored",
+      "passed": true
+    },
+    {
+      "name": "Print button invokes browser print regression",
+      "passed": true
+    },
+    {
+      "name": "No application runtime exceptions",
+      "passed": true
+    }
+  ],
+  "features": [
+    {
+      "name": "All image rights and central hero image agree",
+      "passed": true
+    },
+    {
+      "name": "Default per-route allocations reconcile without duplication",
+      "passed": true
+    },
+    {
+      "name": "Route day1-route1 matches timeline, prices, distance and maps at 1440",
+      "passed": true
+    },
+    {
+      "name": "Route day1-route2 matches timeline, prices, distance and maps at 1440",
+      "passed": true
+    },
+    {
+      "name": "Route day1-route3 matches timeline, prices, distance and maps at 1440",
+      "passed": true
+    },
+    {
+      "name": "Route day1-route4 matches timeline, prices, distance and maps at 1440",
+      "passed": true
+    },
+    {
+      "name": "Route day1-route5 matches timeline, prices, distance and maps at 1440",
+      "passed": true
+    },
+    {
+      "name": "Route day1-route6 matches timeline, prices, distance and maps at 1440",
+      "passed": true
+    },
+    {
+      "name": "Route day2-route1 matches timeline, prices, distance and maps at 1440",
+      "passed": true
+    },
+    {
+      "name": "Route day2-lunch matches timeline, prices, distance and maps at 1440",
+      "passed": true
+    },
+    {
+      "name": "Route day2-route2 matches timeline, prices, distance and maps at 1440",
+      "passed": true
+    },
+    {
+      "name": "Route day2-route3 matches timeline, prices, distance and maps at 1440",
+      "passed": true
+    },
+    {
+      "name": "Route day2-route4 matches timeline, prices, distance and maps at 1440",
+      "passed": true
+    },
+    {
+      "name": "Route day2-route5 matches timeline, prices, distance and maps at 1440",
+      "passed": true
+    },
+    {
+      "name": "Route day3-route1 matches timeline, prices, distance and maps at 1440",
+      "passed": true
+    },
+    {
+      "name": "Route day3-route2 matches timeline, prices, distance and maps at 1440",
+      "passed": true
+    },
+    {
+      "name": "Route day3-route3 matches timeline, prices, distance and maps at 1440",
+      "passed": true
+    },
+    {
+      "name": "Route day3-transfer matches timeline, prices, distance and maps at 1440",
+      "passed": true
+    },
+    {
+      "name": "Route day3-route4 matches timeline, prices, distance and maps at 1440",
+      "passed": true
+    },
+    {
+      "name": "Route day1-route1 matches timeline, prices, distance and maps at 360",
+      "passed": true
+    },
+    {
+      "name": "Route day1-route2 matches timeline, prices, distance and maps at 360",
+      "passed": true
+    },
+    {
+      "name": "Route day1-route3 matches timeline, prices, distance and maps at 360",
+      "passed": true
+    },
+    {
+      "name": "Route day1-route4 matches timeline, prices, distance and maps at 360",
+      "passed": true
+    },
+    {
+      "name": "Route day1-route5 matches timeline, prices, distance and maps at 360",
+      "passed": true
+    },
+    {
+      "name": "Route day1-route6 matches timeline, prices, distance and maps at 360",
+      "passed": true
+    },
+    {
+      "name": "Route day2-route1 matches timeline, prices, distance and maps at 360",
+      "passed": true
+    },
+    {
+      "name": "Route day2-lunch matches timeline, prices, distance and maps at 360",
+      "passed": true
+    },
+    {
+      "name": "Route day2-route2 matches timeline, prices, distance and maps at 360",
+      "passed": true
+    },
+    {
+      "name": "Route day2-route3 matches timeline, prices, distance and maps at 360",
+      "passed": true
+    },
+    {
+      "name": "Route day2-route4 matches timeline, prices, distance and maps at 360",
+      "passed": true
+    },
+    {
+      "name": "Route day2-route5 matches timeline, prices, distance and maps at 360",
+      "passed": true
+    },
+    {
+      "name": "Route day3-route1 matches timeline, prices, distance and maps at 360",
+      "passed": true
+    },
+    {
+      "name": "Route day3-route2 matches timeline, prices, distance and maps at 360",
+      "passed": true
+    },
+    {
+      "name": "Route day3-route3 matches timeline, prices, distance and maps at 360",
+      "passed": true
+    },
+    {
+      "name": "Route day3-transfer matches timeline, prices, distance and maps at 360",
+      "passed": true
+    },
+    {
+      "name": "Route day3-route4 matches timeline, prices, distance and maps at 360",
+      "passed": true
+    },
+    {
+      "name": "Hot spring gallery offers four licensed thumbnails",
+      "passed": true
+    },
+    {
+      "name": "Thumbnail changes image and keeps its instance focus",
+      "passed": true
+    },
+    {
+      "name": "Gallery next and previous controls update selected image",
+      "passed": true
+    },
+    {
+      "name": "Photo expands above presentation with source and license",
+      "passed": true
+    },
+    {
+      "name": "Lightbox keyboard changes photo without advancing slide",
+      "passed": true
+    },
+    {
+      "name": "Escape closes only lightbox and restores image focus",
+      "passed": true
+    },
+    {
+      "name": "Lightbox previous button changes photograph",
+      "passed": true
+    },
+    {
+      "name": "Editing daily food updates timeline, slide and destination immediately",
+      "passed": true
+    },
+    {
+      "name": "Fuel allocation is a subset of the single fuel ledger row",
+      "passed": true
+    },
+    {
+      "name": "No rental or hotel duplication on return routes",
+      "passed": true
+    },
+    {
+      "name": "Central photo permission changes immediately affect all renderers",
+      "passed": true
+    },
+    {
+      "name": "Existing V4 edited fuel and budget load without clobbering storage",
+      "passed": true
+    },
+    {
+      "name": "No runtime exceptions during V5 feature acceptance",
+      "passed": true
+    }
+  ],
+  "http": [
+    {
+      "name": "HTTP subpath opens the V5 application",
+      "passed": true
+    },
+    {
+      "name": "HTTP relative scripts, fonts and styles load",
+      "passed": true
+    },
+    {
+      "name": "HTTP central bundle is served successfully",
+      "passed": true
+    },
+    {
+      "name": "HTTP licensed image resolves correctly",
+      "passed": true
+    },
+    {
+      "name": "HTTP V5 scripts and style resolve under project subpath",
+      "passed": true
+    },
+    {
+      "name": "HTTP all six licensed photographs decode under project subpath",
+      "passed": true
+    },
+    {
+      "name": "HTTP application does not request external routing or map tiles",
+      "passed": true
+    }
+  ],
+  "data": {
+    "passed": true,
+    "checks": 23,
+    "command": "node tests/verify-travel-data.mjs"
+  },
+  "totalChecks": 177
+}

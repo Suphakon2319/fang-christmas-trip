@@ -10843,7 +10843,8 @@
     "tripServiceConfirmed": false,
     "timingStatus": "estimated",
     "needsTravelDateConfirmation": true,
-    "description": "ขอลงสถานีข้างโรงพยาบาลฝาง; เผื่อเดินทาง 3 ชั่วโมง 30 นาที"
+    "description": "ขอลงสถานีข้างโรงพยาบาลฝาง; เผื่อเดินทาง 3 ชั่วโมง 30 นาที",
+    "mapMode": "road"
   },
   {
     "id": "day1-route2",
@@ -11008,7 +11009,8 @@
     "tripServiceConfirmed": false,
     "timingStatus": "estimated",
     "needsTravelDateConfirmation": true,
-    "description": "ตรวจว่าร้านเปิดและมีอาหารที่ต้องการก่อนสั่ง"
+    "description": "ตรวจว่าร้านเปิดและมีอาหารที่ต้องการก่อนสั่ง",
+    "mapMode": "road"
   },
   {
     "id": "day1-route3",
@@ -11056,7 +11058,9 @@
     "tripServiceConfirmed": false,
     "timingStatus": "provisional",
     "needsTravelDateConfirmation": true,
-    "description": "JR เป็นร้านหลักที่ต้องการใช้ แต่ยังไม่มีหมุดและราคา; เบอร์กับที่อยู่จากโจทย์ยังต้องตรวจตรงกับสาขา"
+    "description": "JR เป็นร้านหลักที่ต้องการใช้ แต่ยังไม่มีหมุดและราคา; เบอร์กับที่อยู่จากโจทย์ยังต้องตรวจตรงกับสาขา",
+    "mapMode": "unconfirmed_diagram",
+    "mapNote": "ยังไม่ยืนยันเส้นทางถนน · ขอหมุดหน้าร้านก่อนคำนวณ ไม่มีเส้นถนนหรือระยะสมมติ"
   },
   {
     "id": "day1-route4",
@@ -11104,7 +11108,9 @@
     "tripServiceConfirmed": false,
     "timingStatus": "provisional",
     "needsTravelDateConfirmation": true,
-    "description": "เวลาเผื่อ 30 นาทีต้องตรวจใหม่เมื่อได้หมุด JR; พักก่อนออกเที่ยว"
+    "description": "เวลาเผื่อ 30 นาทีต้องตรวจใหม่เมื่อได้หมุด JR; พักก่อนออกเที่ยว",
+    "mapMode": "unconfirmed_diagram",
+    "mapNote": "ยังไม่ยืนยันเส้นทางถนน · ขอหมุดหน้าร้านก่อนคำนวณ ไม่มีเส้นถนนหรือระยะสมมติ"
   },
   {
     "id": "day1-route5",
@@ -12421,7 +12427,8 @@
     "tripServiceConfirmed": false,
     "timingStatus": "estimated",
     "needsTravelDateConfirmation": true,
-    "description": "จอดในจุดที่อนุญาตและวางแผนกลับก่อนค่ำ"
+    "description": "จอดในจุดที่อนุญาตและวางแผนกลับก่อนค่ำ",
+    "mapMode": "road"
   },
   {
     "id": "day1-route6",
@@ -13738,7 +13745,8 @@
     "tripServiceConfirmed": false,
     "timingStatus": "estimated",
     "needsTravelDateConfirmation": true,
-    "description": "ทานมื้อเย็นที่พักหรือซื้อกลับ โดยถามบริการอาหารล่วงหน้า"
+    "description": "ทานมื้อเย็นที่พักหรือซื้อกลับ โดยถามบริการอาหารล่วงหน้า",
+    "mapMode": "road"
   },
   {
     "id": "day2-route1",
@@ -16147,7 +16155,8 @@
     "tripServiceConfirmed": false,
     "timingStatus": "estimated",
     "needsTravelDateConfirmation": true,
-    "description": "พิกัดในภาพคือพิพิธภัณฑ์; เที่ยวชุมชนตามจุดที่เปิดให้เข้าชม"
+    "description": "พิกัดในภาพคือพิพิธภัณฑ์; เที่ยวชุมชนตามจุดที่เปิดให้เข้าชม",
+    "mapMode": "road"
   },
   {
     "id": "day2-lunch",
@@ -16496,7 +16505,8 @@
     "tripServiceConfirmed": false,
     "timingStatus": "estimated",
     "needsTravelDateConfirmation": true,
-    "description": "เลือกเมนูตามงบ; ไม่ใช้ราคาสุกี้หม้อใหญ่ในรีวิวเก่าเป็นราคามื้อสองคน"
+    "description": "เลือกเมนูตามงบ; ไม่ใช้ราคาสุกี้หม้อใหญ่ในรีวิวเก่าเป็นราคามื้อสองคน",
+    "mapMode": "road"
   },
   {
     "id": "day2-route2",
@@ -18483,7 +18493,8 @@
     "tripServiceConfirmed": false,
     "timingStatus": "estimated",
     "needsTravelDateConfirmation": true,
-    "description": "แนวถนนช่วงนี้คำนวณใหม่จากร้านบ้านดินเล่าจางโดยตรง พร้อมเผื่อเวลาเพิ่มสำหรับขี่ซ้อนสอง"
+    "description": "แนวถนนช่วงนี้คำนวณใหม่จากร้านบ้านดินเล่าจางโดยตรง พร้อมเผื่อเวลาเพิ่มสำหรับขี่ซ้อนสอง",
+    "mapMode": "road"
   },
   {
     "id": "day2-route3",
@@ -18531,7 +18542,9 @@
     "tripServiceConfirmed": false,
     "timingStatus": "provisional",
     "needsTravelDateConfirmation": true,
-    "description": "ข้ามคาเฟ่เมื่อช้า และเตรียมออกจากพื้นที่ตามแผน 15:00"
+    "description": "ข้ามคาเฟ่เมื่อช้า และเตรียมออกจากพื้นที่ตามแผน 15:00",
+    "mapMode": "internal_walk",
+    "mapNote": "เดินภายใน Hinoki Land → Hinoki Coffee · พบอาคารคาเฟ่ใน OSM แต่ยังไม่มีผังทางเดินที่ตรวจสอบแล้ว แผนภาพนี้ไม่บอกระยะหรือทิศทางจริง ถามเจ้าหน้าที่ก่อนเดิน"
   },
   {
     "id": "day2-route4",
@@ -18569,7 +18582,7 @@
     ],
     "motorcycleSuitability": "not_independently_verified",
     "roadRefs": [],
-    "routingFromId": "hinoki",
+    "routingFromId": "coffee",
     "sourceIds": [
       "coffee",
       "user-brief"
@@ -18579,7 +18592,9 @@
     "tripServiceConfirmed": false,
     "timingStatus": "provisional",
     "needsTravelDateConfirmation": true,
-    "description": "โกดังเป็นตัวเลือกจากข้อมูลเบื้องต้น ยังไม่กำหนดเป็นการจอง; หากไม่ทันให้เปลี่ยนเป็นอาหารที่พัก"
+    "description": "โกดังเป็นตัวเลือกจากข้อมูลเบื้องต้น ยังไม่กำหนดเป็นการจอง; หากไม่ทันให้เปลี่ยนเป็นอาหารที่พัก",
+    "mapMode": "unconfirmed_diagram",
+    "mapNote": "ยังไม่ยืนยันเส้นทางถนน · ขอหมุดหน้าร้านก่อนคำนวณ ไม่มีเส้นถนนหรือระยะสมมติ"
   },
   {
     "id": "day2-route5",
@@ -18627,7 +18642,9 @@
     "tripServiceConfirmed": false,
     "timingStatus": "provisional",
     "needsTravelDateConfirmation": true,
-    "description": "เป้าหมายถึงที่พัก 17:30; หากระยะจริงไม่พอให้ข้ามมื้อเย็นนอกที่พัก"
+    "description": "เป้าหมายถึงที่พัก 17:30; หากระยะจริงไม่พอให้ข้ามมื้อเย็นนอกที่พัก",
+    "mapMode": "unconfirmed_diagram",
+    "mapNote": "ยังไม่ยืนยันเส้นทางถนน · ขอหมุดหน้าร้านก่อนคำนวณ ไม่มีเส้นถนนหรือระยะสมมติ"
   },
   {
     "id": "day3-route1",
@@ -19388,7 +19405,8 @@
     "tripServiceConfirmed": false,
     "timingStatus": "estimated",
     "needsTravelDateConfirmation": true,
-    "description": "ตรวจรอบเปิด ค่าเข้า และเขตจอดมอเตอร์ไซค์ก่อนวันไป"
+    "description": "ตรวจรอบเปิด ค่าเข้า และเขตจอดมอเตอร์ไซค์ก่อนวันไป",
+    "mapMode": "road"
   },
   {
     "id": "day3-route2",
@@ -20393,7 +20411,8 @@
     "tripServiceConfirmed": false,
     "timingStatus": "estimated",
     "needsTravelDateConfirmation": true,
-    "description": "หากร้านปิด เลือกอาหารใกล้จุดคืนรถหลังได้หมุด JR และคำนวณระยะใหม่"
+    "description": "หากร้านปิด เลือกอาหารใกล้จุดคืนรถหลังได้หมุด JR และคำนวณระยะใหม่",
+    "mapMode": "road"
   },
   {
     "id": "day3-route3",
@@ -20441,7 +20460,9 @@
     "tripServiceConfirmed": false,
     "timingStatus": "provisional",
     "needsTravelDateConfirmation": true,
-    "description": "เวลาเผื่อ 15 นาทีเป็นแผน ยังไม่มีระยะร้านอาหารถึง JR"
+    "description": "เวลาเผื่อ 15 นาทีเป็นแผน ยังไม่มีระยะร้านอาหารถึง JR",
+    "mapMode": "unconfirmed_diagram",
+    "mapNote": "ยังไม่ยืนยันเส้นทางถนน · ขอหมุดหน้าร้านก่อนคำนวณ ไม่มีเส้นถนนหรือระยะสมมติ"
   },
   {
     "id": "day3-transfer",
@@ -20489,7 +20510,9 @@
     "tripServiceConfirmed": false,
     "timingStatus": "provisional",
     "needsTravelDateConfirmation": true,
-    "description": "แผนถึงสถานี 12:30 ก่อนเที่ยวกลับเป้าหมาย 13:00"
+    "description": "แผนถึงสถานี 12:30 ก่อนเที่ยวกลับเป้าหมาย 13:00",
+    "mapMode": "unconfirmed_diagram",
+    "mapNote": "ยังไม่ยืนยันเส้นทางถนน · ขอหมุดหน้าร้านก่อนคำนวณ ไม่มีเส้นถนนหรือระยะสมมติ"
   },
   {
     "id": "day3-route4",
@@ -31209,6 +31232,7 @@
     "tripServiceConfirmed": false,
     "timingStatus": "estimated",
     "needsTravelDateConfirmation": true,
-    "description": "เผื่อรถโดยสาร 3 ชั่วโมง 30 นาที ไม่ใช้ OSRM รถยนต์ประมาณ 139 นาทีแทน"
+    "description": "เผื่อรถโดยสาร 3 ชั่วโมง 30 นาที ไม่ใช้ OSRM รถยนต์ประมาณ 139 นาทีแทน",
+    "mapMode": "road"
   }
 ]

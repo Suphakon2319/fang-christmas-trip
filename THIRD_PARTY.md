@@ -1,3 +1,12 @@
+# สิทธิ์ภาพ V5 · 2026-10-16
+
+V5 ใช้ภาพน้ำพุร้อน CC0 เดิมและเพิ่มภาพที่มีอยู่ก่อนสามภาพของ LannaPhoto: [FangHotSpring1](https://commons.wikimedia.org/wiki/File:FangHotSpring1.jpg), [FangHotSpring2](https://commons.wikimedia.org/wiki/File:FangHotSpring2.jpg), [FangHotSpring3](https://commons.wikimedia.org/wiki/File:FangHotSpring3.jpg), ถ่าย 2013 / [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+
+ดาวน์โหลดใหม่สองภาพโดย FredTC: [สถานีช้างเผือกมุม 1](https://commons.wikimedia.org/wiki/File:Chang_Phuak_Busstation_P_20170115_120437.jpg), [มุม 2](https://commons.wikimedia.org/wiki/File:Chang_Phuak_Busstation_P_20170115_120514.jpg), ถ่าย 2017 / CC BY-SA 4.0 ไม่มีการแก้ไฟล์ แสดง contain พร้อมเครดิต/ต้นฉบับ/ใบอนุญาต ภาพใช้ภายใต้สิทธิ์เดิม ไม่อ้างว่าผู้ถ่ายรับรองทริป
+
+ภาพที่ไม่มีหลักฐานสิทธิ์เผยแพร่ซ้ำ 16 ไฟล์ยังไม่แสดง ภาพประกอบ SVG ทั่วไปของโปรเจกต์ระบุว่าไม่ใช่ภาพถ่ายสถานที่ ข้อมูลรายไฟล์ใน travel_research/photos.json และ IMAGE_AUDIT_2026-10-16.md คำอธิบายส่วนเก่าด้านล่างไม่ใช่การอนุญาตใช้ภาพร้าน/เว็บไซต์
+
+---
 # Third-party assets
 
 ## V4 rights audit · 2026-10-16

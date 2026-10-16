@@ -1,3 +1,18 @@
+# ฝางคริสต์มาส · V5
+
+เปิด index.html ได้โดยตรง ไม่ต้อง Docker หรือ server · เว็บออนไลน์ https://suphakon2319.github.io/fang-christmas-trip/
+
+V5 เพิ่มแกลเลอรีปลายทาง ภาพจริงที่อนุญาตใช้ซ้ำ 6 ภาพ แผงงบ 2 คนครบ 17 Route และแผนภาพชัดเจนสำหรับช่วงที่หมุดยังไม่ครบ คงธีมเดิมและข้อมูลผู้ใช้
+
+อ่าน [รายงาน V5](travel_research/WEBSITE_UPDATE_REPORT_V5.md), [ตรวจสิทธิ์ภาพ](travel_research/IMAGE_AUDIT_2026-10-16.md), [ผลทดสอบ](TEST_RESULTS.md)
+
+ข้อมูลกลางอยู่ travel_research/*.json แก้แล้วรัน `node scripts/build-travel-data.mjs` ก่อนรีโหลด/commit; คีย์ LocalStorage V4 คงไว้เพื่อรักษาข้อมูลที่เคยแก้ ไม่เขียนทับด้วยค่าเริ่มต้นใหม่ งบในสไลด์แบ่งจาก ledger เดียว ไม่เพิ่มรายการซ้ำ
+
+ทดสอบเพิ่ม `python tests/browser_v5_features.py` (Python websocket-client และ Edge เฉพาะผู้พัฒนา)
+
+ข้อความ V4 ด้านล่างเป็นประวัติรุ่นก่อนหน้า ให้ยึดรายงาน V5 สำหรับข้อมูลล่าสุด
+
+---
 # ไปฝางกัน ♡ — ข้อมูลเดินทาง V4
 
 ทริปฝาง 24–26 ธันวาคม 2026 · 2 คน · กรอบงบ 6,000 บาท ธีมสมุดทริปเดิม เปิดได้ทั้งจากไฟล์และ GitHub Pages
