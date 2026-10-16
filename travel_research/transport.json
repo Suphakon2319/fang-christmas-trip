@@ -1,0 +1,75 @@
+[
+  {
+    "id": "jr",
+    "name": "JR Bike Rental Fang / เจอาร์ รถเช่าฝาง",
+    "address": "12/16 ถนนโชตนา ต.เวียง อ.ฝาง จ.เชียงใหม่ (ข้อมูลจากโจทย์)",
+    "latitude": null,
+    "longitude": null,
+    "phone": "086-117-7576",
+    "sourceUrl": "https://www.traveloka.com/th-th/hotel/thailand/landmark/san-chao-fang-91753876325866",
+    "verifiedAt": "2026-10-16",
+    "verificationStatus": "third_party",
+    "notes": "ชื่อปรากฏในแหล่งรอง แต่ที่อยู่และเบอร์มาจากโจทย์ ยังไม่พบหลักฐานหมุดหน้าร้าน ห้ามใช้พิกัดสถานีแทน; แผนถือรถ 45.5 ชั่วโมง ต้องถามเกณฑ์คิดวันและค่าคืนเกินเวลา",
+    "day": 1,
+    "type": "เช่ามอเตอร์ไซค์",
+    "duration": "แวะตามเวลาที่เผื่อ",
+    "gallery": true,
+    "serviceOnTravelDates": "unconfirmed",
+    "openingHours": null,
+    "entryTHB": null,
+    "description": "ร้านเช่าที่ผู้เดินทางต้องการใช้เป็นหลัก กรุณาตรวจสาขาและขอหมุดจากร้าน",
+    "fieldStatus": {
+      "name": "third_party",
+      "address": "unconfirmed",
+      "phone": "unconfirmed",
+      "coordinates": "unconfirmed"
+    },
+    "kind": "rental",
+    "models": null,
+    "dailyRateTHB": null,
+    "tripRateTHB": null,
+    "depositTHB": null,
+    "helmets": null,
+    "twoUpAllowed": null,
+    "documents": null,
+    "pickupHours": null,
+    "returnHours": null,
+    "plannedPickup": "2026-12-24T14:15:00+07:00",
+    "plannedReturn": "2026-12-26T11:45:00+07:00"
+  },
+  {
+    "id": "bus-operator",
+    "name": "ยานยนต์นครเชียงใหม่",
+    "address": null,
+    "latitude": null,
+    "longitude": null,
+    "phone": "053-215604",
+    "sourceUrl": "https://www.yanyonnakornchiangmai.co.th/contents.php?id=contact&lang=th",
+    "verifiedAt": "2026-10-16",
+    "verificationStatus": "official",
+    "notes": "ตารางเก่ามีประกาศ COVID ไม่รับรอง ธ.ค. 2026; เผื่อรถบัส 210 นาที แยกจาก OSRM รถยนต์",
+    "kind": "bus",
+    "originId": "chiangmai",
+    "destinationId": "fang",
+    "farePerPersonTHB": null,
+    "fareTwoPeopleTHB": null,
+    "currentDeparture": null,
+    "currentReturnDeparture": null,
+    "publishedOldOptions": [
+      {
+        "type": "VIP",
+        "departure": "09:00",
+        "boarding": "จุดของบริษัทคนละจุดกับรถบัส",
+        "serviceOnTravelDates": "unconfirmed"
+      },
+      {
+        "type": "bus",
+        "departure": "09:30",
+        "boarding": "สถานีช้างเผือก",
+        "serviceOnTravelDates": "unconfirmed"
+      }
+    ],
+    "plannedOutbound": "09:30",
+    "plannedReturn": "13:00"
+  }
+]

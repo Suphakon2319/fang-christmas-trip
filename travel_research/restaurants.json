@@ -1,0 +1,112 @@
+[
+  {
+    "id": "lunch",
+    "name": "ฮักแกะ@ฝาง",
+    "address": "ซอยสันป่าไหน ต.เวียง อ.ฝาง จ.เชียงใหม่",
+    "latitude": 19.907498858774865,
+    "longitude": 99.20391616936351,
+    "phone": null,
+    "sourceUrl": "https://www.wongnai.com/restaurants/230497ij",
+    "verifiedAt": "2026-10-16",
+    "verificationStatus": "third_party",
+    "notes": "ใช้เป็นมื้อกลางวันวันที่ 24 และทางเลือกวันที่ 26 แทนการแต่งชื่อร้านข้าวซอย",
+    "day": 1,
+    "type": "ร้านอาหาร",
+    "duration": "แวะตามเวลาที่เผื่อ",
+    "gallery": true,
+    "serviceOnTravelDates": "unconfirmed",
+    "openingHours": null,
+    "entryTHB": null,
+    "description": "ร้านในฝางที่มีหมุดและรีวิว เมนูและเวลาเปิดต้องถามก่อนแวะ",
+    "menus": [
+      "อาหารตามรีวิวร้าน; ถามเมนูวันที่ไป"
+    ],
+    "menuPriceTHB": null,
+    "reservationStatus": "unconfirmed"
+  },
+  {
+    "id": "laojang",
+    "name": "บ้านดินเล่าจาง",
+    "address": "106 บ้านยาง หมู่ 12 ต.แม่งอน อ.ฝาง จ.เชียงใหม่",
+    "latitude": 19.807764239482527,
+    "longitude": 99.10099536180496,
+    "phone": "087-124-8060",
+    "sourceUrl": "https://www.wongnai.com/restaurants/117862ZM",
+    "verifiedAt": "2026-10-16",
+    "verificationStatus": "third_party",
+    "notes": "รีวิวมีสุกี้ยูนนาน ขาหมู หมั่นโถว ต้องถามขนาดเหมาะกับสองคนและสั่งล่วงหน้า ไม่ใช้ราคาหม้อใหญ่ในรีวิวเป็นราคามื้อสองคน",
+    "day": 2,
+    "type": "ร้านอาหาร",
+    "duration": "แวะตามเวลาที่เผื่อ",
+    "gallery": true,
+    "serviceOnTravelDates": "unconfirmed",
+    "openingHours": null,
+    "entryTHB": null,
+    "description": "อาหารจีนยูนนานโซนบ้านยาง มีพิกัดร้านแยกจากพิพิธภัณฑ์",
+    "menus": [
+      "สุกี้ยูนนาน",
+      "ขาหมู",
+      "หมั่นโถว"
+    ],
+    "menuPriceTHB": null,
+    "reservationStatus": "unconfirmed"
+  },
+  {
+    "id": "kodang",
+    "name": "โกดังหมูกระทะบุฟเฟ่ต์",
+    "address": "342/4 ต.เวียง อ.ฝาง จ.เชียงใหม่ (ข้อมูลจากโจทย์)",
+    "latitude": null,
+    "longitude": null,
+    "phone": "097-938-6618",
+    "sourceUrl": null,
+    "verifiedAt": "2026-10-16",
+    "verificationStatus": "unconfirmed",
+    "notes": "ข้อมูลเบื้องต้นจากโจทย์ ไม่พบหลักฐานเพียงพอยืนยันหมุด ราคา เวลาเปิดและบริการ 25 ธ.ค.; เป็นตัวเลือกมีเงื่อนไข ไม่ใช่จุดที่จองแล้ว",
+    "day": 2,
+    "type": "ร้านอาหาร",
+    "duration": "แวะตามเวลาที่เผื่อ",
+    "gallery": true,
+    "serviceOnTravelDates": "unconfirmed",
+    "openingHours": null,
+    "entryTHB": null,
+    "description": "ตัวเลือกมื้อเย็น โทรสอบถามและรับหมุดก่อนเลือกไป",
+    "fieldStatus": {
+      "name": "unconfirmed",
+      "address": "unconfirmed",
+      "phone": "unconfirmed",
+      "coordinates": "unconfirmed"
+    },
+    "menus": [
+      "หมูกระทะบุฟเฟ่ต์ (ตามข้อมูลโจทย์)"
+    ],
+    "menuPriceTHB": null,
+    "reservationStatus": "unconfirmed"
+  },
+  {
+    "id": "coffee",
+    "name": "ฮิโนกิคอฟฟี่",
+    "address": null,
+    "latitude": null,
+    "longitude": null,
+    "phone": null,
+    "sourceUrl": "https://hinokiland.com/",
+    "verifiedAt": "2026-10-16",
+    "verificationStatus": "official",
+    "notes": "อยู่ภายใน Hinoki Land; ใช้ทางเข้า Hinoki เป็นจุดอ้างอิงพื้นที่เท่านั้น ไม่สร้างพิกัดคาเฟ่แยก",
+    "day": 2,
+    "type": "ร้านอาหาร",
+    "duration": "แวะตามเวลาที่เผื่อ",
+    "gallery": true,
+    "serviceOnTravelDates": "unconfirmed",
+    "openingHours": "08:00–17:00 (ข้อมูลทั่วไปบนเว็บเจ้าของสถานที่; ตรวจวันเดินทางอีกครั้ง)",
+    "entryTHB": null,
+    "parentPlaceId": "hinoki",
+    "description": "พักกาแฟภายในพื้นที่ Hinoki Land โดยไม่เพิ่มช่วงขี่รถ",
+    "openingHoursPublished": "08:00–17:00 ตามหน้าเจ้าของสถานที่",
+    "menus": [
+      "เครื่องดื่ม; ตรวจเมนูปัจจุบัน"
+    ],
+    "menuPriceTHB": null,
+    "reservationStatus": "unconfirmed"
+  }
+]

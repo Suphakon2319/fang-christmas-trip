@@ -1,3 +1,9 @@
+# ข้อมูลล่าสุด V4 · 16 ตุลาคม 2026
+
+รายงานปัจจุบัน: [verification_report.md](travel_research/verification_report.md) และ [pending_confirmation.md](travel_research/pending_confirmation.md) มีแนวถนน 10/17 ช่วง ระยะมอเตอร์ไซค์ที่ทราบ 98.1 กม. ข้อมูลด้านล่างเป็นบันทึกประวัติ V2/V3 ไม่ใช่สถานะล่าสุด
+
+---
+
 # บันทึกตรวจสอบข้อมูลเดินทาง V2
 
 ## อัปเดตแผนที่ถนน V3 · 15 ตุลาคม 2026

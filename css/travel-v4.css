@@ -1,0 +1,12 @@
+/* Keep the journal theme; V4 only adds research details and licensed media. */
+.hero-photo,.slide-cover{background-image:linear-gradient(90deg,#fff1e9e8,#fff1e9a8),url('../assets/images/mountain-journal.svg')!important}
+body.dark .slide-cover{background-image:linear-gradient(90deg,#382f36,#382f36d9 50%,#382f3670),url('../assets/images/mountain-journal.svg')!important}
+.v4-photo-placeholder{height:100%;min-height:150px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:10px;text-align:center;padding:20px;background:radial-gradient(circle at 18% 20%,#f7d9d8 0 3%,transparent 3.5%),radial-gradient(circle at 85% 72%,#dbe8d7 0 7%,transparent 7.5%),linear-gradient(135deg,#fff0e5,#edf2e3);color:#8d6a60}
+.v4-photo-placeholder>svg{width:32px;height:32px;color:#b77b8d}.v4-photo-placeholder>span{font-family:Mali,Prompt,sans-serif;font-size:19px;font-weight:600;line-height:1.6}.v4-photo-placeholder>small{font-size:10px;line-height:1.7;color:#8f8578}
+.v4-place-address{font-size:10px;line-height:1.9;margin-top:8px}
+.v4-contact{padding:12px;background:var(--paper);border:1px solid var(--line);border-radius:12px}.v4-contact>strong{font-size:12px;font-weight:500;display:block}.v4-contact>div{display:flex;gap:13px;flex-wrap:wrap;margin:5px 0}.v4-contact a{font-size:11px;text-decoration:underline}.v4-contact>small{display:block!important;font-size:9px!important;line-height:1.8!important;margin-top:5px}
+.expense-panel th:nth-child(4),.expense-panel td:nth-child(4){display:table-cell!important}
+.expense-panel .table-scroll table{min-width:530px}.expense-panel td:nth-child(4){width:120px}.expense-panel td:nth-child(4) select{max-width:125px;font-size:10px}
+.v4-price-breakdown{display:flex;gap:8px 20px;flex-wrap:wrap;padding-top:14px;margin-top:13px;border-top:1px dashed var(--line);font-size:11px}.v4-price-breakdown span>b{display:block;font-weight:500}.v4-unpriced{font-size:11px;line-height:1.9;margin-top:14px}.v4-unpriced summary{cursor:pointer}.v4-unpriced li{margin:8px 0}.v4-unpriced strong{font-weight:500}
+@media(max-width:600px){.v4-photo-placeholder>span{font-size:17px}.v4-price-breakdown{display:grid;grid-template-columns:1fr 1fr;gap:12px;font-size:10px}.v4-unpriced{font-size:10px}}
+@media print{.v4-photo-placeholder{min-height:90px;padding:8px;gap:4px}.v4-photo-placeholder>span{font-size:10px}.v4-photo-placeholder>small{font-size:7px}.v4-price-breakdown{font-size:8px}.v4-unpriced{font-size:8px}.expense-panel .table-scroll table{min-width:0}.v4-contact{break-inside:avoid}}

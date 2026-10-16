@@ -1,5 +1,12 @@
 # Third-party assets
 
+## V4 rights audit · 2026-10-16
+
+The statements below about personal-plan inclusion record earlier versions, not a grant of reproduction rights. V4 displays only the existing Fang Hot Springs photograph by icon0 com, whose source explicitly identifies CC0/public-domain reuse, and original project illustrations. Files from Trip.com, TripNiceDay, Hinoki Land, Wongnai and the municipality are retained but not displayed because attribution alone does not establish a reuse license. No new unlicensed photographs were downloaded. See travel_research/photos.json for the per-file audit and source/license URLs. Placeholder cards identify missing licensed media and link to original location pages.
+
+Three additional static Esri map exports and OSRM driving geometries are stored for museum→Laojang, Laojang→Hinoki and hot springs→Hug Sheep. Full service attribution remains in every map. Existing OSM/OSRM and Esri terms apply as described below. The geometry/extent pairing is validated; driving-model output is not certification of motorcycle access.
+
+
 ## Local real-road map edition (V3)
 
 Static map images in assets/maps were exported for this personal travel report from [Esri World Topographic Map](https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer), following [Esri static-map terms](https://doc.arcgis.com/en/arcgis-online/reference/static-maps.htm). No tile sets were harvested. Map image is the intellectual property of Esri and is used herein under license. Copyright © 2026 Esri and its licensors. All rights reserved. Service credits: Esri, HERE, Garmin, Intermap, increment P Corp., GEBCO, USGS, FAO, NPS, NRCAN, GeoBase, IGN, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), © OpenStreetMap contributors, and the GIS User Community. Full credits are available in the expandable attribution beneath every map. Export URLs and actual returned extents are preserved in adjacent JSON files.

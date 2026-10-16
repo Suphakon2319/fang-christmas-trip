@@ -1,0 +1,43 @@
+[
+  {
+    "id": "homestay",
+    "name": "สส โฮมสเตย์ ริมน้ำแม่มาว",
+    "address": "บ้านใหม่หัวฝาย หมู่ 3 ต.โป่งน้ำร้อน อ.ฝาง จ.เชียงใหม่",
+    "latitude": 19.92049602111295,
+    "longitude": 99.15201466530561,
+    "phone": "084-739-4476",
+    "sourceUrl": "https://www.tripniceday.com/place/สส-โฮมสเตย์-1744002127365",
+    "verifiedAt": "2026-10-16",
+    "verificationStatus": "third_party",
+    "notes": "พิกัดและรูปจากข้อมูลสมาชิก ไม่ใช่หมุดส่งตรงจากเจ้าของ",
+    "day": 1,
+    "type": "ที่พักของเรา",
+    "duration": "2 คืน",
+    "description": "พักผ่อนริมลำน้ำ ใช้เวลาช้า ๆ ด้วยกัน ต้องยืนยันห้องว่างและราคากับเจ้าของที่พัก",
+    "gallery": true,
+    "openingHours": null,
+    "entryTHB": null,
+    "serviceOnTravelDates": "unconfirmed",
+    "fieldStatus": {
+      "coordinates": "third_party",
+      "phone": "third_party",
+      "openingHours": "unconfirmed",
+      "entryTHB": "unconfirmed"
+    },
+    "nights": 2,
+    "travelers": 2,
+    "currentQuoteTHB": null,
+    "historicalRatePerPersonNightTHB": 350,
+    "historicalRateYear": 2025,
+    "historicalTwoPersonTwoNightTHB": 1400,
+    "breakfastIncludedInHistoricalReview": true,
+    "breakfastIncludedForTrip": null,
+    "checkIn": null,
+    "checkOut": null,
+    "availabilityForTravelDates": null,
+    "parking": null,
+    "accessInstructions": null,
+    "priceStatus": "historical",
+    "priceSourceUrl": "https://www.youtube.com/watch?v=101k2lkG0Oc"
+  }
+]
