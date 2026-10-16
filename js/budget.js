@@ -1,13 +1,13 @@
-/* V2 reads V1 without changing it. Saves only to its own versioned key. */
+/* V4 reads V1 without changing it. Saves only to its own versioned key. */
 window.TripBudget = (() => {
   const KEY='fang-trip-budget-v4',OLD_KEY='fang-trip-budget-v1',V2_KEY='fang-trip-budget-v2';
-  const priceLabels={confirmed:'ยืนยันแล้ว',historical:'ราคาเก่า',estimated:'ประมาณการ',unknown:'ยังไม่มีราคา'};
+  const priceLabels={confirmed:'ยืนยันแล้ว',historical:'ราคาเก่า',estimated:'ประมาณการ',unknown:'ยังไม่ยืนยันราคา'};
   let state,chart=null,migrated=false,storageBlocked=false;
   const clone=x=>JSON.parse(JSON.stringify(x));
   const round=x=>Math.round((x+Number.EPSILON)*100)/100;
   const money=x=>'฿'+Number(x).toLocaleString('th-TH',{maximumFractionDigits:2});
-  const defaults=()=>({schemaVersion:4,budget:TripResearch.prices.budgetTHB,expenses:clone(TripData.defaultExpenses),
-    fuel:{mode:'routes',distance:null,efficiency:TripResearch.prices.fuel.efficiencyKmPerLitre,price:TripResearch.prices.fuel.pricePerLitreTHB,date:TripResearch.prices.fuel.priceDate||'',detour:TripResearch.prices.fuel.detourPercent,allowance:TripResearch.prices.fuel.allowanceTHB},origin:'v4'});
+  const defaults=()=>({schemaVersion:4,budget:TripPricesV5.budgetTHB,expenses:clone(TripData.defaultExpenses),
+    fuel:{mode:'routes',distance:null,efficiency:TripPricesV5.fuel.efficiencyKmPerLitre,price:TripPricesV5.fuel.pricePerLitreTHB,date:TripPricesV5.fuel.priceDate||'',detour:TripPricesV5.fuel.detourPercent,allowance:TripPricesV5.fuel.allowanceTHB},origin:'v2'});
   const validNumber=(x,max=10000000)=>typeof x==='number'&&Number.isFinite(x)&&x>=0&&x<=max;
   function validate(x) {
     return x&&validNumber(x.budget)&&Array.isArray(x.expenses)&&x.expenses.length<=500&&
@@ -18,11 +18,11 @@ window.TripBudget = (() => {
   }
   function normalize(x,legacy=false) {
     x=clone(x);x.schemaVersion=4;
-    x.expenses.forEach(e=>{if(!['estimated','confirmed'].includes(e.verificationStatus))e.verificationStatus='estimated';if(!Object.hasOwn(priceLabels,e.priceStatus)){const baseline=TripData.defaultExpenses.find(b=>b.id===e.id);e.priceStatus=e.verificationStatus==='confirmed'?'confirmed':baseline?.amount===e.amount?baseline.priceStatus:'estimated';}});
+    x.expenses.forEach(e=>{if(!['estimated','confirmed'].includes(e.verificationStatus))e.verificationStatus='estimated';if(!Object.hasOwn(priceLabels,e.priceStatus))e.priceStatus=e.verificationStatus==='confirmed'?'confirmed':(TripData.defaultExpenses.find(b=>b.id===e.id)?.priceStatus||'estimated');});
     x.fuel.mode=legacy?'manual':(['manual','routes'].includes(x.fuel.mode)?x.fuel.mode:'routes');
     x.fuel.detour=legacy?0:(validNumber(x.fuel.detour,100)?x.fuel.detour:15);
     x.fuel.allowance=validNumber(x.fuel.allowance,100000)?x.fuel.allowance:x.expenses.find(e=>e.id==='fuel').amount;
-    x.origin=legacy?'migrated_v1':(x.origin||'v4');
+    x.origin=legacy?'migrated_v1':(x.origin||'v2');
     return x;
   }
   function save() {
@@ -34,8 +34,8 @@ window.TripBudget = (() => {
   function total(){return round(state.expenses.reduce((s,e)=>s+e.amount,0));}
   function allocation() {
     const reserve=round(state.expenses.filter(e=>e.category==='reserve').reduce((s,e)=>s+e.amount,0));
-    const confirmed=round(state.expenses.filter(e=>e.category!=='reserve'&&e.priceStatus==='confirmed').reduce((s,e)=>s+e.amount,0));
-    const priceTotals=Object.fromEntries(Object.keys(priceLabels).map(key=>[key,round(state.expenses.filter(e=>e.category!=='reserve'&&e.priceStatus===key).reduce((sum,e)=>sum+e.amount,0))]));return {reserve,confirmed,priceTotals,unknownCount:state.expenses.filter(e=>e.priceStatus==='unknown').length,operating:round(total()-reserve),estimated:round(total()-reserve-confirmed),unallocated:round(state.budget-total())};
+    const confirmed=round(state.expenses.filter(e=>e.category!=='reserve'&&e.verificationStatus==='confirmed').reduce((s,e)=>s+e.amount,0));
+    return {reserve,confirmed,operating:round(total()-reserve),estimated:round(total()-reserve-confirmed),unallocated:round(state.budget-total())};
   }
   function fuelCalculation() {
     const aggregate=RouteInfographic.aggregate(),f=state.fuel;
@@ -68,7 +68,7 @@ window.TripBudget = (() => {
     });
   }
   function renderTotals() {
-    window.TripRoutePrices?.refresh();window.dispatchEvent(new Event('trip:budget-rendered'));
+    TripRoutePrices.refresh();
     const spent=total(),a=allocation();
     document.getElementById('planned-total').textContent=money(spent);
     document.getElementById('remaining-total').textContent=money(a.unallocated);
@@ -80,9 +80,7 @@ window.TripBudget = (() => {
     const status=a.unallocated<0?'over':a.estimated>0||pending>0?'caution':'good';
     health.dataset.health=status;
     const title=status==='over'?'ต้องปรับแผนก่อนจอง':status==='caution'?'อยู่ในกรอบ แต่ยังต้องเช็กราคาและเส้นทาง':'งบมีพื้นที่เผื่อ';
-    health.innerHTML=`<div class="health-heading"><strong>${status==='over'?'!':'♡'} สุขภาพงบทริป: ${title}</strong><span>จัดสรร ${state.budget?Math.round(spent/state.budget*100):0}% ของงบ</span></div><div class="health-track"><span style="width:${state.budget?Math.min(100,a.operating/state.budget*100):100}%"></span><i style="width:${state.budget?Math.min(100,a.reserve/state.budget*100):0}%"></i></div><div class="health-values"><span>ค่าใช้จ่าย <b>${money(a.operating)}</b></span><span>เงินสำรองฉุกเฉิน <b>${money(a.reserve)}</b></span><span>ยังไม่จัดสรร <b>${money(a.unallocated)}</b></span><span>ค่าใช้จ่ายต่อคน / ไม่รวมสำรอง <b>${money(a.operating/2)}</b></span></div><p>${migrated?'อ่านงบเดิมโดยคงยอด รายการ และระยะไว้ · บันทึกเฉพาะคีย์ V4 เมื่อคุณแก้ไข · ':''}ยังไม่รวมราคาที่ไม่ทราบของรถรับจ้างเชื่อมจุดและเงินมัดจำที่คืนได้ หากงบเกินให้พิจารณาข้ามคาเฟ่ เลือกอาหารง่ายขึ้น หรือขอราคาที่พักทางเลือกก่อนเปลี่ยนแผน</p>`;
-    const priceBlock=document.createElement('div');priceBlock.className='v4-price-breakdown';priceBlock.innerHTML=Object.entries(priceLabels).map(([key,label])=>`<span>${label}<b>${money(a.priceTotals[key])}${key==='unknown'?' · เงินกันไว้':''}</b></span>`).join('');health.append(priceBlock);
-    const gaps=document.createElement('details');gaps.className='v4-unpriced';gaps.innerHTML=`<summary>ราคาไม่ทราบ / เงินสดเพิ่มเติม ${TripResearch.prices.unpricedItems.length} รายการ</summary><ul>${TripResearch.prices.unpricedItems.map(p=>`<li><strong>${TripApp.esc(p.name)}: ยังไม่มีราคา</strong> · ${TripApp.esc(p.notes)}</li>`).join('')}</ul><p>ยอดเหล่านี้ยังไม่ถูกนับเป็นศูนย์หรือรวมอยู่ในยอดจัดสรร อาจต้องเตรียมเงินเพิ่ม</p>`;health.append(gaps);
+    health.innerHTML=`<div class="health-heading"><strong>${status==='over'?'!':'♡'} สุขภาพงบทริป: ${title}</strong><span>จัดสรร ${state.budget?Math.round(spent/state.budget*100):0}% ของงบ</span></div><div class="health-track"><span style="width:${state.budget?Math.min(100,a.operating/state.budget*100):100}%"></span><i style="width:${state.budget?Math.min(100,a.reserve/state.budget*100):0}%"></i></div><div class="health-values"><span>ค่าใช้จ่าย <b>${money(a.operating)}</b></span><span>เงินสำรองฉุกเฉิน <b>${money(a.reserve)}</b></span><span>ยังไม่จัดสรร <b>${money(a.unallocated)}</b></span><span>ค่าใช้จ่ายต่อคน / ไม่รวมสำรอง <b>${money(a.operating/2)}</b></span></div><p>${migrated?'อ่านงบที่บันทึกไว้มาใช้โดยคงยอด รายการ และระยะเดิมไว้ · บันทึกเฉพาะคีย์ V4 เมื่อคุณแก้ไข · ':''}ยังไม่รวมราคาที่ไม่ทราบของรถรับจ้างเชื่อมจุดและเงินมัดจำที่คืนได้ หากงบเกินให้พิจารณาข้ามคาเฟ่ เลือกอาหารง่ายขึ้น หรือขอราคาที่พักทางเลือกก่อนเปลี่ยนแผน</p>`;
     document.getElementById('daily-expenses').innerHTML=[1,2,3,0].map(d=>{const sum=state.expenses.filter(e=>e.day===d).reduce((s,e)=>s+e.amount,0);return `<span>${d?'วันที่ '+d:'ทั้งทริป / รวมสำรอง'}<b>${money(sum)}</b></span>`;}).join('');
     renderChart();
   }
@@ -99,7 +97,7 @@ window.TripBudget = (() => {
     document.getElementById('fuel-total').textContent=c.cost===null?'รอระยะทาง':money(c.cost);
     document.getElementById('fuel-state').textContent=c.complete?'ประมาณการรวมเผื่อขี่อ้อม '+money(c.detour)+' · อยู่ในงบ 1 รายการ':'ยังขาดระยะ '+c.aggregate.pending+' ช่วง · ตั้งงบไว้ '+money(state.expenses.find(e=>e.id==='fuel').amount);
     const block=document.getElementById('fuel-route-breakdown');
-    block.innerHTML=`<div class="fuel-breakdown-title"><strong>ระยะมอเตอร์ไซค์จากแผน</strong><span>${c.aggregate.count} ช่วง · ไม่รวมรถโดยสาร รถรับจ้าง และการเดิน</span></div><div class="fuel-days">${c.aggregate.days.map(d=>`<div><strong>วันที่ ${d.day}</strong><span>ระยะที่ทราบ ${d.knownKm.toFixed(1)} กม.</span><span>แบบจำลอง / ผู้ใช้กรอก</span><small>${d.pending?'ยังขาด '+d.pending+' ช่วง':'ระยะครบตามข้อมูลที่กรอก'}</small></div>`).join('')}<div><strong>รวมที่ทราบ ${c.aggregate.knownKm.toFixed(1)} กม.</strong><span>${c.aggregate.pending?'ยังไม่ใช่ระยะทั้งทริป':'ครบทุกช่วงที่ใช้มอเตอร์ไซค์'}</span><small>ราคา ${f.price} บาท/ลิตร · ${f.date?'วันที่อ้างอิง '+f.date:'ราคาสมมติ ไม่มีวันที่อ้างอิง'}</small></div></div><p class="fuel-precision-note">${f.mode==='manual'?'กำลังใช้ระยะประมาณเอง '+(f.distance??'ยังไม่กรอก')+' กม. ตัวเลขรายวันด้านบนยังแสดงจาก Route Data แยกไว้ ไม่ได้ถูกนำมาบวกซ้ำ':'ค่าน้ำมันคำนวณใหม่เมื่อเติมระยะในรายละเอียดเส้นทาง หากยังมีช่วงที่ไม่ทราบ จะคงงบตั้งเผื่อหรือยอดขั้นต่ำที่คำนวณได้ซึ่งมากกว่าไว้ก่อน'} · รายการที่ขาด: ${TripData.routes.filter(r=>/มอเตอร์ไซค์/.test(r.transport)&&RouteInfographic.distance(r).km===null).map(r=>TripApp.esc(r.from+' → '+r.to)).join('; ')||'ไม่มี'} · ราคาน้ำมันเป็นสมมติฐานเมื่อไม่มีวันที่อ้างอิง</p>`;
+    block.innerHTML=`<div class="fuel-breakdown-title"><strong>ระยะมอเตอร์ไซค์จากแผน</strong><span>${c.aggregate.count} ช่วง · ไม่รวมรถโดยสาร รถรับจ้าง และการเดิน</span></div><div class="fuel-days">${c.aggregate.days.map(d=>`<div><strong>วันที่ ${d.day}</strong><span>มีแหล่งยืนยัน ${d.verifiedKm.toFixed(1)} กม.</span><span>ผู้ใช้ / ประมาณ ${d.estimatedKm.toFixed(1)} กม.</span><small>${d.pending?'ยังขาด '+d.pending+' ช่วง':'ระยะครบตามข้อมูลที่กรอก'}</small></div>`).join('')}<div><strong>รวมที่ทราบ ${c.aggregate.knownKm.toFixed(1)} กม.</strong><span>${c.aggregate.pending?'ยังไม่ใช่ระยะทั้งทริป':'ครบทุกช่วงที่ใช้มอเตอร์ไซค์'}</span><small>ราคา ${f.price} บาท/ลิตร · ${f.date?'วันที่อ้างอิง '+f.date:'ราคาสมมติ ไม่มีวันที่อ้างอิง'}</small></div></div><p class="fuel-precision-note">${f.mode==='manual'?'กำลังใช้ระยะประมาณเอง '+(f.distance??'ยังไม่กรอก')+' กม. ตัวเลขรายวันด้านบนยังแสดงจาก Route Data แยกไว้ ไม่ได้ถูกนำมาบวกซ้ำ':'ค่าน้ำมันคำนวณใหม่เมื่อเติมระยะในรายละเอียดเส้นทาง หากยังมีช่วงที่ไม่ทราบ จะคงงบตั้งเผื่อหรือยอดขั้นต่ำที่คำนวณได้ซึ่งมากกว่าไว้ก่อน'} · ไม่แสดงเป็นราคาจริงที่ยืนยัน</p>`;
   }
   function updateFuel({initial=false}={}) {
     const c=fuelCalculation();
@@ -114,17 +112,12 @@ window.TripBudget = (() => {
   function init() {
     state=defaults();let note='';
     try {
-      const v4=localStorage.getItem(KEY);
-      if(v4!==null){const x=JSON.parse(v4);if(validate(x)){state=normalize(x);migrated=true;}else{storageBlocked=true;note='ข้อมูล V4 อ่านไม่ได้ · ยังไม่บันทึกทับ';}}
-      else {
-        const v2=localStorage.getItem(V2_KEY),v1=localStorage.getItem(OLD_KEY);
-        const previous=v2??v1;
-        if(previous!==null){const x=JSON.parse(previous);if(validate(x)){state=normalize(x,v2===null);migrated=true;note='อ่านงบ '+(v2!==null?'V2':'V1')+' เดิม · บันทึกใหม่เฉพาะ V4 เมื่อแก้ไข';}else{storageBlocked=true;note='ข้อมูลเดิมอ่านไม่ได้ · เก็บต้นฉบับไว้';}}
-      }
+      const v2=localStorage.getItem(KEY);
+      if(v2!==null){const x=JSON.parse(v2);if(validate(x)){state=normalize(x);migrated=true;}else{storageBlocked=true;note='ข้อมูล V4 เดิมอ่านไม่ได้ · ยังไม่บันทึกทับ';}}
+      else {const v2old=localStorage.getItem(V2_KEY),old=v2old??localStorage.getItem(OLD_KEY);if(old!==null){const x=JSON.parse(old);if(validate(x)){state=normalize(x,v2old===null);migrated=true;}else{note='ข้อมูล V1 อ่านไม่ได้ · เก็บต้นฉบับไว้ ไม่แก้คีย์เดิม';}}}
     } catch(e){storageBlocked=true;note='อ่านข้อมูลเดิมไม่ได้ · เก็บข้อมูลเดิมไว้';}
     document.getElementById('budget-summary').innerHTML='<div class="budget-stat"><small>งบทั้งหมด · แก้ไขได้</small><strong>฿<input id="budget-limit" aria-label="งบทั้งหมด" type="number" min="0" max="10000000" step="100"></strong></div><div class="budget-stat"><small>จัดสรรรวมเงินสำรอง</small><strong id="planned-total"></strong></div><div class="budget-stat"><small>เงินที่ยังไม่จัดสรร</small><strong id="remaining-total"></strong></div><div class="budget-stat"><small>ยอดจัดสรรต่อคน / รวมสำรอง</small><strong id="person-total"></strong></div>';
     loadInputs();renderRows();updateFuel({initial:true});
-    const reconciliation=document.createElement('div');reconciliation.id='v5-budget-reconciliation';reconciliation.className='v5-budget-reconciliation';document.querySelector('#budget-health').after(reconciliation);TripRoutePrices.refresh();
     if(note)document.getElementById('save-state').textContent=note;
     document.getElementById('budget-limit').addEventListener('input',e=>{if(e.target.value===''||!e.target.checkValidity())return;state.budget=Number(e.target.value);renderTotals();save();});
     document.getElementById('expense-rows').addEventListener('input',e=>{
@@ -143,7 +136,7 @@ window.TripBudget = (() => {
       renderRows();renderTotals();save();const input=document.querySelector('#expense-rows tr:last-child input');input.focus();input.select();
     });
     document.getElementById('reset-budget').addEventListener('click',()=>{
-      if(!confirm('เริ่มงบ V4 ใหม่แทนที่แก้ไว้? งบ V1/V2 ต้นฉบับยังเก็บไว้'))return;
+      if(!confirm('ใช้ค่างบ V4 เริ่มต้นแทนงบที่แก้ใน V4? งบ V1 ต้นฉบับยังเก็บไว้'))return;
       state=defaults();migrated=false;storageBlocked=false;loadInputs();renderRows();updateFuel();save();
     });
     for(const key of ['distance','efficiency','price','date','mode','detour','allowance'])document.getElementById('fuel-'+key).addEventListener('input',e=>{
@@ -153,5 +146,5 @@ window.TripBudget = (() => {
     });
     window.addEventListener('trip:routes-changed',()=>{updateFuel();save();});
   }
-  return {init,total,money,allocation,expenseAmount:id=>state?.expenses.find(e=>e.id===id)?.amount,calculateFuel,fuelCalculation,getState:()=>clone(state)};
+  return {expenseAmount:id=>state?.expenses.find(e=>e.id===id)?.amount,init,total,money,allocation,calculateFuel,fuelCalculation,getState:()=>clone(state)};
 })();

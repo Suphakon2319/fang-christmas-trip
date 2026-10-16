@@ -1,3 +1,13 @@
+# ผลทดสอบรุ่นปัจจุบัน: หน้าตาแรก + ราคา V5
+
+Edge ผ่าน 18 checks บน file:// และ 18 checks บน HTTP project subpath รวม 36 checks ตรวจครบ 17 เส้นทางที่ 360/768/1440 พิกเซล ยอดงบ V5 ตรงกัน การแก้ราคาและข้อมูลเดิมไม่สูญ ไม่มี runtime exception
+
+ดู [รายละเอียดการคืนรุ่น](RESTORE_FIRST_VERSION.md), [ผลเปิดไฟล์](tests/results-first-prices.json), [ผล HTTP](tests/results-first-prices-http.json)
+
+รัน `python tests/browser_first_prices.py` และ `node scripts/build-price-data.mjs --check` สำหรับรุ่นปัจจุบัน ผล V5 เดิมด้านล่างเป็นประวัติการทดสอบของ UI V5
+
+---
+
 # ผลทดสอบ V5 · 16 ตุลาคม 2026
 
 รันทดสอบจริงบน Windows / Edge headless รวม 177 checks ผ่านทั้งหมด

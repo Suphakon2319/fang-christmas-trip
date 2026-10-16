@@ -1,0 +1,74 @@
+[
+  {
+    "name": "First published itinerary and V5 prices load offline",
+    "passed": true
+  },
+  {
+    "name": "V5 default expense rows and budget are intact",
+    "passed": true
+  },
+  {
+    "name": "V5 price units and activity sources are available",
+    "passed": true
+  },
+  {
+    "name": "First version photos and offline maps are restored",
+    "passed": true
+  },
+  {
+    "name": "Default fuel is charged once and stays within allocated fuel",
+    "passed": true
+  },
+  {
+    "name": "New custom expenses start with unknown price status",
+    "passed": true
+  },
+  {
+    "name": "Planner width 360",
+    "passed": true
+  },
+  {
+    "name": "All 17 route prices match timeline at 360",
+    "passed": true
+  },
+  {
+    "name": "Planner width 768",
+    "passed": true
+  },
+  {
+    "name": "All 17 route prices match timeline at 768",
+    "passed": true
+  },
+  {
+    "name": "Planner width 1440",
+    "passed": true
+  },
+  {
+    "name": "All 17 route prices match timeline at 1440",
+    "passed": true
+  },
+  {
+    "name": "Editing V5 budget updates route prices in both original views",
+    "passed": true
+  },
+  {
+    "name": "Saved V5 user budget survives switching to original appearance",
+    "passed": true
+  },
+  {
+    "name": "Original detail modal works with V5 price panel",
+    "passed": true
+  },
+  {
+    "name": "Price editing action returns to the original budget tracker",
+    "passed": true
+  },
+  {
+    "name": "Original theme and print remain functional",
+    "passed": true
+  },
+  {
+    "name": "No runtime exceptions",
+    "passed": true
+  }
+]
