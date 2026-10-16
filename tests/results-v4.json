@@ -429,6 +429,10 @@
       "passed": true
     },
     {
+      "name": "Photo rights inventory covers every existing image file",
+      "passed": true
+    },
+    {
       "name": "Timeline and presentation share canonical route objects",
       "passed": true
     },

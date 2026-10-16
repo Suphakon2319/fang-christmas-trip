@@ -27,6 +27,7 @@ check('Bus model times never replace planned bus times',()=>routes.filter(r=>/à¸
 check('Unknown prices are not converted into free services',()=>{prices.expenses.filter(e=>e.priceStatus==='unknown').forEach(e=>assert.equal(e.priceTHB,null));prices.unpricedItems.forEach(e=>assert.equal(e.priceTHB,null))});
 check('Three days of meals have explicit allocation references',()=>prices.mealCoverage.forEach(day=>{assert.ok(day.meals.length>=2);assert.ok(prices.expenses.some(e=>e.id===day.budgetExpenseId))}));
 check('Every renderable photo has an established reuse license and a local file',()=>photos.filter(p=>p.allowedToDisplay).forEach(p=>{assert.ok(['original','licensed'].includes(p.rightsStatus));assert.ok(p.license);assert.ok(fs.existsSync(path.join(root,p.file)));if(p.rightsStatus==='licensed')assert.ok(p.sourceUrl&&p.licenseUrl)}));
+check('Photo rights inventory covers every existing image file',()=>fs.readdirSync(path.join(root,'assets/images')).forEach(name=>assert.ok(photos.some(p=>p.file==='assets/images/'+name),name)));
 const context=vm.createContext({window:{}});context.window=context;
 for(const file of ['js/data.js','assets/maps/route-geometries.js','assets/maps/real-map-data.js','js/travel-v3.js','js/travel-research-data.js','js/travel-v4.js','js/route-infographic.js','js/map.js'])vm.runInContext(fs.readFileSync(path.join(root,file),'utf8'),context,{filename:file});
 check('Timeline and presentation share canonical route objects',()=>context.TripData.routes.forEach((r,i)=>assert.equal(r,context.TripResearch.routes[i])));

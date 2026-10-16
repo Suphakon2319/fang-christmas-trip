@@ -2,7 +2,7 @@
 
 รันทดสอบใหม่บน Microsoft Edge แบบ headless เปิดทั้ง file:// และ HTTP ชั่วคราวที่พาธ /fang-christmas-trip/ ไม่มีการใช้ผล V3 แทนการรันใหม่
 
-ผ่านจริง **98 รายการในเบราว์เซอร์ + 14 รายการข้อมูล + 5 รายการ HTTP รวม 117 รายการ** ตรวจ node --check สำหรับ JavaScript และไฟล์ข้อมูลแผนที่ทั้งหมดเพิ่มเติม
+ผ่านจริง **98 รายการในเบราว์เซอร์ + 15 รายการข้อมูล + 5 รายการ HTTP รวม 118 รายการ** ตรวจ node --check สำหรับ JavaScript และไฟล์ข้อมูลแผนที่ทั้งหมดเพิ่มเติม
 
 ## วิธีตรวจและหลักฐาน
 
@@ -10,7 +10,7 @@
 - tests/verify-travel-data.mjs ตรวจว่าข้อมูล JSON กับ bundle ตรงกัน พิกัดต้น–ปลาย Routing URL ตรงกับสถานที่ ช่วงเดินทางต่อกัน เวลาเผื่อและเวลาออก–ถึงสอดคล้องกัน สิทธิ์ภาพ และยอดงบแยกสำรอง
 - tests/http_smoke.py เปิดเซิร์ฟเวอร์ชั่วคราวเฉพาะ 127.0.0.1 และปิดหลังตรวจพาธย่อยแบบ GitHub Pages ไฟล์ CSS/ฟอนต์/JS/รูปโหลดได้และไม่เรียก routing/tile ภายนอก
 - ผลดิบที่เก็บใน Git: tests/results-v4.json ผลภาพและ PDF อยู่เฉพาะในเครื่องที่ .qa/presentation-v4-1920.png, .qa/presentation-v4-mobile.png, .qa/itinerary-v4.pdf
-- จำลองหน้าจอ 360, 390, 768, 1024, 1440, 1920 พิกเซล ไม่พบแนวนอนล้นหน้า แผนที่และข้อความอยู่ในกรอบ และตรวจครบทุกสไลด์เส้นทางบนเดสก์ท็อป
+- จำลองหน้าจอ 360, 390, 768, 1024, 1540, 1920 พิกเซล ไม่พบแนวนอนล้นหน้า แผนที่และข้อความอยู่ในกรอบ และตรวจครบทุกสไลด์เส้นทางบนเดสก์ท็อป
 - พิมพ์ทั้ง 3 วันเป็น PDF จริง ตรวจมี SVG 17 ช่วงและงบครบ แล้วกลับไปยังวันที่เลือกก่อนพิมพ์
 
 ## ผลที่มีความสำคัญกับข้อมูล
@@ -147,6 +147,7 @@ data
 - PASS Unknown prices are not converted into free services
 - PASS Three days of meals have explicit allocation references
 - PASS Every renderable photo has an established reuse license and a local file
+- PASS Photo rights inventory covers every existing image file
 - PASS Timeline and presentation share canonical route objects
 - PASS Map navigation uses source pins, not snapped proxies
 - PASS Fuel excludes buses, transfers and walking
